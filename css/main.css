@@ -1,7 +1,5 @@
 @import url('style.css');
 
-
-
 .sr-only {
   position: absolute;
   width: 1px;
@@ -666,12 +664,12 @@ p {
 .content-ul {
   list-style: none;
   position: relative;
-  padding-left: 20px;
+  padding-left: 0px;
   margin: 10px 0;
 }
 .content-ul > li:before {
-  content: '\2022';
-  position: absolute;
+  /* content: '\2022'; */
+  /* position: absolute; */
   left: 0;
 }
 .nude-list {
@@ -1077,7 +1075,7 @@ button:focus {
   width: 100%;
 }
 .btn-primary {
-    background-color: #004b8e;
+    background-color: #fd9b00;
     /* border-radius: 5px; */
     color: #fff;
     padding: 10px 20px;
@@ -1085,7 +1083,7 @@ button:focus {
 }
 .btn-primary:hover,
 .btn-primary:focus {
-  background-color: #07284c;
+  background-color: #fcc034;
   color: #fff;
 }
 .btn-primary-round {
@@ -3549,18 +3547,51 @@ button.swiper-pagination-bullet {
 .pagination-next:after {
   content: '\003e';
 }
+.filterbox {
+  width: 100%;
+}
 .results {
-    float: left;
+    /* float: left; */
+    display: inline-block;
     list-style: none;
     padding: 8px 9px 0px 11px;
-    border-right: beige;
+    position: relative;
     border-right: 1px solid #bfc1c3;
+    text-align: center;
+}
+.results-options {
+    /* float: left; */
+    display: inline-block;
+
+}
+.filtertransfers ul {
+  width: 100%;
+  
+}
+
+.filtertransfers li {
+    display: inline-block;
+    list-style: none;
+}
+
+
+.nolist{
+  list-style: none;
+
+}
+
+
+.results-noline  {
+    /* float: left; */
+    display: inline-block;
+    list-style: none;
+    padding: 8px 9px 0px 11px;
+    position: relative;
 }
 .resultstitle {
     float: left;
     list-style: none;
     padding: 8px 9px 0px 11px;
-    border-right: beige;
     border-right: 1px solid #bfc1c3;
 }
 .buttonfilter{
@@ -3632,11 +3663,26 @@ button.swiper-pagination-bullet {
     line-height: 14px;
 }
 .resultstext {
-    font-size: 14px;
+    font-size: 16px;
     color: #004b8d;
     font-weight: bold;
     text-transform: uppercase;
 }
+.resultstitle-m {
+  display: none;
+}
+.results-button {
+    /* float: left; */
+    display: inline-flex;
+    list-style: none;
+    padding: 8px 9px 0px 11px;
+    position: absolute;
+    /* margin-top: -3px; */
+    /* margin-bottom: -3px; */
+    margin: 0px 0px 0px 9px;
+}
+.resultsline {background-color: #fd9b00; */width: 2;height: 44px;width: 1px;}
+
 .filtername{
     font-size: 10px;
     color: #919598;
@@ -3646,6 +3692,14 @@ button.swiper-pagination-bullet {
     font-size: 16px;
     color: #646769;
 
+}
+
+.roundtrip-icon {
+  /* float: left; */
+  /* font-size: 29px; */
+  color: #004b8d;
+  /* margin: -11px -5px 0px -15px; */
+  padding: 12px;
 }
 .activities-icon {
   /* float: left; */
@@ -4479,6 +4533,15 @@ button.swiper-pagination-bullet {
   font-size: 23px;
   text-transform: uppercase;
 }
+.transfer-item__title {
+  border-bottom: 1px solid #dedede;
+  margin-top: 10px;
+  padding-bottom: 5px;
+  text-align: left;
+  color: #004b8d;
+  font-size: 23px;
+  text-transform: uppercase;
+}
 .transfer-item__note {
   font-size: 12px;
   padding: 5px 15px;
@@ -4503,6 +4566,10 @@ button.swiper-pagination-bullet {
 .transfer-item__amount-label {
   font-size: 13px;
 }
+.transfer-item__icon {
+  margin-right: 20px;
+  color: #004b8d;
+}
 .transfer-item__amount {
   color: #004b8d;
   margin: 10px 0 20px;
@@ -4518,6 +4585,9 @@ button.swiper-pagination-bullet {
 }
 .transfer-item__button {
   width: 165px;
+  margin-top: 29px;
+  text-align: center;
+  /* margin-right: 88px; */
 }
 .transfer-item__options {
   display: none;
@@ -5157,7 +5227,7 @@ button.swiper-pagination-bullet {
 .tours-grid__item:hover .tours-grid__item-header::after,
 .selected .tours-grid__item-header::after {
   content: '';
-  border-color: transparent;
+  border-color: #fd9b00;
   border-style: solid;
   border-width: 4px 4px 0;
   position: absolute;
@@ -5188,7 +5258,7 @@ button.swiper-pagination-bullet {
   margin-top: 60px;
   margin-bottom: 60px;
 }
-.tours-activities-main h1,
+.tours-activities-main h1{
 .tours-transfers-main h1{
   color: #004b8d;
   text-transform: uppercase;
@@ -5197,7 +5267,7 @@ button.swiper-pagination-bullet {
   margin: 20px 0;
 }
 .tours-activities-top{
-  width: 70%;
+  width: 60%;
   text-align: justify;
   color: #004b8d; 
   margin: 0 auto;
@@ -5231,7 +5301,7 @@ button.swiper-pagination-bullet {
   background: rgba(7,40,76,0.7);
   height: 100%;
   color: #fff;
-  padding: 11% 0;
+  padding: 60px 0;
   min-height: 465px;
 }
 .tours-activities-color h1{
@@ -5247,7 +5317,8 @@ button.swiper-pagination-bullet {
 }
 .tours-activities-color .tours-activities-top{
   color: #fff;
-  width: 80%;
+  width: 80%
+
 }
 .tours-grid__item-price--right {
   right: 0;
@@ -6702,18 +6773,39 @@ display: inline-block;
     font-size: 14px;
   }
   .filtername {
-    display: none;
+    /* display: none; */
 }
 
 .results {
-    padding: 3px 5px 0px 6px;
-    border-right: 1px solid #bfc1c3;
+    /* padding: 3px 5px 0px 6px; */
+    border-right: none;
+}
+.filtertransfers {
+  display: initial;
+}
+.results-button {
+    /* float: left; */
+    display: block;
+    list-style: none;
+    padding: 8px 9px 0px 11px;
+    position: relative;
+    margin-top: 19px;
+}
+
+.filtertransfers li {
+    display: list-item;
+    list-style: none;
+    text-align: center;
+    margin: 10px 0px 1px 1px;
 }
 .resultstitle {
 
-    padding: 3px 5px 0px 6px;
-    border-right: 1px solid #bfc1c3;
+     display: none;
 }
+.resultstitle-m {
+    display: inline-table;
+}
+
 .buttonfilter {
     text-align: center;
 }
@@ -6721,7 +6813,7 @@ display: inline-block;
     margin-left: -34px;
 }
 .filterresult {
-    font-size: 10px;
+    font-size: 19px;
 }
 .results-act {
     float: left;
