@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-<!----
+<!---
     <header class="page-header">
       <div class="page-header__top-section">
         <div class="page-header__row page-top">
@@ -177,8 +177,78 @@
         </div>
       </div>
     </div>
-    ---->
+  ---->
+    <div class="searchbox-section">
+        <div class="searchbox jqueryui-tabs">
+          <ul class="searchbox-tabs-nav">
+            <li class="searchbox-tabs-nav__item ui-tabs-active"><a href="#tabs-transfers" class="searchbox-tabs-nav__item-title">Transfers</a></li>
+            <li class="searchbox-tabs-nav__item"><a href="#tabs-tours" class="searchbox-tabs-nav__item-title">Tours</a></li>
+          </ul>
+          <div class="searchbox-tabs">
+            <div id="tabs-transfers" class="searchbox-tab">
+              <form action="./airport_transfers.html">
+                <label class="form-field">Airport
+                  <input type="text" placeholder="CUN / Cancun" class="form-control form-control--searchbox">
+                </label>
+                <label class="form-field">Type of Transfer
+                  <select id="sb-transfer" name="sb-transfer" class="form-control form-control--searchbox jqueryui-selectmenu">
+                    <option value="1">Option One</option>
+                    <option value="2">Option Two</option>
+                    <option value="3">Option Three</option>
+                  </select>
+                </label>
+                <label class="form-field">Hotel
+                  <input type="text" placeholder="CUN / Cancun" class="form-control form-control--searchbox">
+                </label>
+                <div class="form-group-flex-all">
+                  <label class="form-field">Adult
+                    <select id="sb-adult" name="sb-adult" class="form-control form-control--searchbox jqueryui-selectmenu">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                    </select>
+                  </label>
+                  <label class="form-field">Child
+                    <select id="sb-child" name="sb-child" class="form-control form-control--searchbox jqueryui-selectmenu">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                    </select>
+                  </label>
+                  <label class="form-field">Infant
+                    <select id="sb-infant" name="sb-infant" class="form-control form-control--searchbox jqueryui-selectmenu">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                    </select>
+                  </label>
+                </div>
+                <div class="form-group-flex-all">
+                  <label class="form-field">Arrival
+                    <input type="text" class="form-control form-control--searchbox form-control--small datepicker-control js-datepicker">
+                  </label>
+                  <label class="form-field">Departure
+                    <input type="text" class="form-control form-control--searchbox form-control--small datepicker-control js-datepicker">
+                  </label>
+                </div>
+                <div class="form-field--center">
+                  <input type="submit" value="Search" class="btn btn-notice">
+                </div>
+              </form>
+            </div>
+            <div id="tabs-tours" class="searchbox-tab">
+              <form action="./tours_and_activities.html">Tours search box tab
+                <div class="form-field--center">
+                  <input type="submit" value="Search" class="btn btn-notice">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
     <div class="page-main">
+        
 
       <div class="page-section">
             <div class="results-container">
