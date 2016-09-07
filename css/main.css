@@ -2107,6 +2107,41 @@ li.ui-timepicker-selected .ui-timepicker-duration,
 .home-page .top-nav__item-title{
   color: #fff;
 }
+.home-icons-section{
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 -10px
+  }
+.home-icons-item{
+    color: #7d7e80;
+    cursor: pointer;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    margin: 0 1% 20px;
+    padding: 0 15px 15px;
+    position: relative;
+    text-decoration: none;
+    color: #0a4575;
+    text-align: center;
+  }
+.home-icons-icon{
+    font-size: 45px;
+    margin-bottom: 25px;
+  }
+  .home-icon-title{
+    font-size: 25px;
+  }
 @media (min-width: 768px) {
   .dialog__column {
     width: 238px;
@@ -2707,15 +2742,7 @@ li.ui-timepicker-selected .ui-timepicker-duration,
   .home-page .top-nav--first-level > li.current > .top-nav__item-title{
     color: #fff;
   }
-  .home-icons-section{
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin: 0 -10px
-  }
+
   .top-nav--second-level {
     background-color: rgba(7, 40, 76, 0.9);
     position: absolute;
@@ -5136,12 +5163,14 @@ button.swiper-pagination-bullet {
   margin-bottom: 20px;
 }
 @media (min-width: 480px) {
-  .tours-grid__item {
+  .tours-grid__item,
+  .home-icons-item {
     width: 48%;
   }
 }
 @media (min-width: 768px) {
-  .tours-grid__item {
+  .tours-grid__item,
+  .home-icons-item {
     width: 31.33%;
   }
   .tours-grid__item.tours-item-bottom {
