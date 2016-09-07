@@ -4599,51 +4599,6 @@ button.swiper-pagination-bullet {
 .transfer-item--active .transfer-item__options {
   display: block;
 }
-.transfers-bannervideo{
-  font-size: 1.8em;
-  text-align: center;
-  text-transform: uppercase;
-  margin-bottom: 30px;
-}
-.transfers-bannervideo-content{
-  font-size: 1.5em;
-  text-align: center;
-}
-.transfers-item-footer{
-  margin-top: 35px;
-}
-.transfers-banners-01{
-  font-size: 3.5em;
-  text-transform: uppercase;
-  position: absolute;
-  left: 20%;
-  bottom: 10%;
-}
-.transfers-banners-02{
-  font-size: 3.5em;
-  text-transform: uppercase;
-  position: absolute;
-  right: 20%;
-  bottom: 10%;
-}
-
-.transfers-video{
-  text-align: center;
-  margin: 50px 0;
-}
-.transfers-video {
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
-  padding-top: 25px;
-  height: 0;
-}
-.transfers-video iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
 @media (min-width: 768px) {
   .transfer-item__row {
     display: -webkit-flex;
@@ -5251,18 +5206,11 @@ button.swiper-pagination-bullet {
   box-shadow: none;
   box-shadow: 0 0 0 4px #fd9b00 inset;
 }
-.tours-activities-all.tours-activities-grid .tours-grid__item:hover,
-.tours-activities-all.tours-activities-grid .tours-grid__item.selected {
-  background-color: #fff;
-  box-shadow: none;
-  box-shadow: transparent;
-}
 .tours-activities-main{
   margin-top: 60px;
   margin-bottom: 60px;
 }
 .tours-activities-main h1{
-.tours-transfers-main h1{
   color: #004b8d;
   text-transform: uppercase;
   text-align: center;
@@ -5334,10 +5282,6 @@ button.swiper-pagination-bullet {
   margin: 10px 0 5px;
   text-align: center;
   text-transform: uppercase;
-}
-.tours-grid__item-price-label-country{
-  font-size: 30px;
-  margin-top: 12%;
 }
 .tours-grid__item-description {
   -webkit-flex: 1 1 auto;
@@ -5461,61 +5405,8 @@ button.swiper-pagination-bullet {
     position: relative;
     margin: 0 -15px;
 }
-.tours-activities-combo{
-  margin-bottom: 30px;
-  text-align: center;
-}
-.tours-activities-combo .tours-activities-form-field{
-  display: inline-block;
-  vertical-align: middle;
-}
-.tours-activities-combo {
 
-}
-.transfers-landing-imgback{
-  background: #ccc;
-  background-attachment: fixed;
-  background-color: #fff;
-  background-position: center top;
-  background-repeat: repeat-y;
-  background-size: cover;
-  height: 100%;
-  margin: 0 auto;
-  width: 100%;
-}
-.transfers-landing-imgback-01{
-  background-image: url(../img/transfers-landing-01.jpg);
-}
-.transfers-landing-imgback-02{
-  background-image: url(../img/transfers-landing-02.jpg);
-}
-.transfers-landing-imgback-03{
-  background-image: url(../img/transfers-landing-03.jpg);
-}
-.transfers-landing-color{
-  background: rgba(7,40,76,0.7);
-  height: 100%;
-  color: #fff;
-  padding: 11% 0;
-  min-height: 465px;
-}
-.transfers-landing-banner{
-  height: 100%;
-  color: #fff;
-  padding: 11% 0;
-  min-height: 495px;
-  position: relative;
-}
-.btn-video{
-  border:1px solid #ff8201;
-  color: #ffffff;
-  padding: 9px 20px 9px 9px;
-  text-transform: uppercase;
-}
-.transfers-video-btn{
-  display: inline-block;
-  margin-right: 10px;
-}
+
 .arrow {width: 100%;position:relative;/* top: 32%; */left: 0%;z-index: 50;margin-top: 18%;}
 .arrow a {font-family: "Microsoft YaHei";font-size: 20px;/* font-weight: 700; */color: #fff;}
 .arrow-text {font-family: "Microsoft YaHei";font-size: 20px;/* font-weight: 700; */color: #fff;}
