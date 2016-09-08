@@ -2134,14 +2134,30 @@ li.ui-timepicker-selected .ui-timepicker-duration,
     text-decoration: none;
     color: #0a4575;
     text-align: center;
+    width: 100%;
   }
 .home-icons-icon{
     font-size: 45px;
     margin-bottom: 25px;
-  }
-  .home-icon-title{
+}
+.home-icon-title{
     font-size: 25px;
-  }
+}
+.home-icon-content{
+  margin-top: 20px;
+}
+.home-travelagent-imgback{
+    background: #ccc;
+    background-image: url(../img/home-travelagents-back.jpg);
+    background-attachment: fixed;
+    background-color: #fff;
+    background-position: center top;
+    background-repeat: repeat-y;
+    background-size: cover;
+    height: 100%;
+    margin: 0 auto;
+    width: 100%;
+}
 @media (min-width: 768px) {
   .dialog__column {
     width: 238px;
