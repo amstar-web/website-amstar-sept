@@ -2224,13 +2224,38 @@ li.ui-timepicker-selected .ui-timepicker-duration,
     -ms-flex: 0 1 auto;
     flex: 0 1 auto;
     /* margin: 0 1% 20px; */
-    padding: 15px;
     position: relative;
     text-decoration: none;
     color: #0a4575;
     text-align: center;
     width: 100%;
     background: #ccc;
+}
+.home-deals-item-header{
+  height: 250px;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.home-deals-content{
+  color: #fff;
+  height: 100%;
+  background:rgba(7,16,37,0.5);
+}
+.home-deal-title{
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.home-deal-promo{
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.btn-deals{
+  border: 1px solid #fff;
+  color: #ffffff;
+  padding: 12px 30px ;
+  text-transform: uppercase;
 }
 @media (min-width: 768px) {
   .dialog__column {
@@ -2274,6 +2299,11 @@ li.ui-timepicker-selected .ui-timepicker-duration,
   .message-img {
     display: inline-block;
     margin: 0 80px;
+  }
+}
+@media (min-width: 770px) {
+  .home-deals-item-header{
+    height: 340px;
   }
 }
 @media (max-width: 1023px) {
