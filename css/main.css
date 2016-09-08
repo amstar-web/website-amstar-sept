@@ -2158,6 +2158,27 @@ li.ui-timepicker-selected .ui-timepicker-duration,
     margin: 0 auto;
     width: 100%;
 }
+.home-deals-item{
+  color: #7d7e80;
+    cursor: pointer;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    /* margin: 0 1% 20px; */
+    padding: 15px;
+    position: relative;
+    text-decoration: none;
+    color: #0a4575;
+    text-align: center;
+    width: 100%;
+    background: #ccc;
+}
 @media (min-width: 768px) {
   .dialog__column {
     width: 238px;
@@ -5183,11 +5204,17 @@ button.swiper-pagination-bullet {
   .home-icons-item {
     width: 48%;
   }
+ .home-deals-item{
+    width: 48%;
+ }
 }
 @media (min-width: 768px) {
   .tours-grid__item,
   .home-icons-item {
     width: 31.33%;
+  }
+  .home-deals-item{
+    width: 33.33%;
   }
   .tours-grid__item.tours-item-bottom {
     width: 99%;
