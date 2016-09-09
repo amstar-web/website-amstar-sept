@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-    <!--<header class="page-header">
+  <!---
+    <header class="page-header">
       <div class="page-header__top-section">
         <div class="page-header__row page-top">
           <form class="site-search">
@@ -83,145 +84,125 @@
             </li>
           </ul>
         </li>
-        <li class="top-nav__item current"><a href="./tours_and_activities.html" class="top-nav__item-title">Tours &amp; Activities</a></li>
-        <li class="top-nav__item"><a href="./car-rental.html" class="top-nav__item-title">Car Rental</a></li>
+        <li class="top-nav__item"><a href="./tours_and_activities.html" class="top-nav__item-title">Tours &amp; Activities</a></li>
+        <li class="top-nav__item current"><a href="./car-rental.html" class="top-nav__item-title">Car Rental</a></li>
         <li class="top-nav__item"><a href="./about_us.html" class="top-nav__item-title">About Us</a></li>
         <li class="top-nav__item"><a href="./contact_us.html" class="top-nav__item-title">Contact Us</a></li>
       </ul>
     </nav>
     <div class="top-content">
-      <div class="top-swiper swiper-container js-swiper">
-        <div class="swiper-pagination-wrapper">
-          <div class="swiper-pagination"></div>
-        </div>
-        <div class="swiper-wrapper">
-          <div style="background-image: url(./img/swiper/slide.jpg);" class="swiper-slide top-swiper-slide">
-            <div class="promotion-block-wrapper">
-              <div class="promotion-block">
-                <div class="promotion-block__text"><span style="font-size: 23px; font-style: italic;">Riviera Maya</span><br><span style="font-size: 30px;">Chichen Plus </span><br><span style="font-size: 20px;">from $<span style="font-size: 40px; vertical-align: text-top; line-height: 1;">59</span> USD</span></div>
-                <div class="promotion-block__action"><a href="./offers-and-discounts.html" class="btn btn-notice">Book Now</a></div>
-              </div>
-            </div>
-          </div>
-          <div style="background-image: url(./img/swiper/slide.jpg);" class="swiper-slide top-swiper-slide"></div>
-          <div style="background-image: url(./img/swiper/slide.jpg);" class="swiper-slide top-swiper-slide"></div>
-        </div>
-      </div>
+      <div style="background-image: url(./img/content/car-rental.jpg)" class="car-rental-banner"></div>
       <div class="searchbox-section">
-        <div class="searchbox jqueryui-tabs">
-          <ul class="searchbox-tabs-nav">
-            <li class="searchbox-tabs-nav__item ui-tabs-active"><a href="#tabs-transfers" class="searchbox-tabs-nav__item-title">Transfers</a></li>
-            <li class="searchbox-tabs-nav__item"><a href="#tabs-tours" class="searchbox-tabs-nav__item-title">Tours</a></li>
-          </ul>
-          <div class="searchbox-tabs">
-            <div id="tabs-transfers" class="searchbox-tab">
-              <form action="./airport_transfers.html">
-                <label class="form-field">Airport
-                  <input type="text" placeholder="CUN / Cancun" class="form-control form-control--searchbox">
-                </label>
-                <label class="form-field">Type of Transfer
-                  <select id="sb-transfer" name="sb-transfer" class="form-control form-control--searchbox jqueryui-selectmenu">
-                    <option value="1">Option One</option>
-                    <option value="2">Option Two</option>
-                    <option value="3">Option Three</option>
-                  </select>
-                </label>
-                <label class="form-field">Hotel
-                  <input type="text" placeholder="CUN / Cancun" class="form-control form-control--searchbox">
-                </label>
-                <div class="form-group-flex-all">
-                  <label class="form-field">Adult
-                    <select id="sb-adult" name="sb-adult" class="form-control form-control--searchbox jqueryui-selectmenu">
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                    </select>
-                  </label>
-                  <label class="form-field">Child
-                    <select id="sb-child" name="sb-child" class="form-control form-control--searchbox jqueryui-selectmenu">
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                    </select>
-                  </label>
-                  <label class="form-field">Infant
-                    <select id="sb-infant" name="sb-infant" class="form-control form-control--searchbox jqueryui-selectmenu">
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                    </select>
-                  </label>
+        <div class="car-rental-searchbox">
+          <div class="car-rental-searchbox__header">Book Your Car</div>
+          <div class="car-rental-searchbox__main">
+            <form action="./car-rental-results.html">
+              <label class="form-field">Pick-up Location
+                <select id="pick-up-location" name="pick-up-location" class="form-control form-control--searchbox jqueryui-selectmenu">
+                  <option value="1">Option One</option>
+                  <option value="2">Option Two</option>
+                  <option value="3">Option Three</option>
+                </select>
+              </label>
+              <label class="form-field form-checkbox">Return to Different Location?
+                <input type="checkbox"><span class="styled-checkbox"></span>
+              </label>
+              <label for="">Pick-up Date &amp; Time</label>
+              <div class="form-group-flex-all">
+                <div class="form-field">
+                  <input type="text" class="form-control form-control--searchbox datepicker-control js-datepicker">
                 </div>
-                <div class="form-group-flex-all">
-                  <label class="form-field">Arrival
-                    <input type="text" class="form-control form-control--searchbox form-control--small datepicker-control js-datepicker">
-                  </label>
-                  <label class="form-field">Departure
-                    <input type="text" class="form-control form-control--searchbox form-control--small datepicker-control js-datepicker">
-                  </label>
+                <div class="form-field form-field--time">
+                  <input type="text" class="form-control form-control--searchbox js-timepicker">
                 </div>
-                <div class="form-field--center">
-                  <input type="submit" value="Search" class="btn btn-notice">
-                </div>
-              </form>
-            </div>
-            <div id="tabs-tours" class="searchbox-tab">
-              <form action="./tours_and_activities.html">Tours search box tab
-                <div class="form-field--center">
-                  <input type="submit" value="Search" class="btn btn-notice">
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>-->
-      <div class="page-main">
-        <div class="page-section tours-transfers-main">
-          <h1>Why book whit amstar</h1>
-          <div class="tours-activities-top">
-             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas nunc arcu, quis pellentesque orci laoreet eget. Pellentesque laoreet eget sapien vitae sollicitudin. Vestibulum semper, diam in ultricies pulvinar, justo magna viverra dolor, eget congue turpis mauris ac ligula. Fusce sed nisi dapibus, pulvinar enim id, pulvinar diam. Sed feugiat sapien magna, sed molestie turpis vestibulum a.</p>
-          </div>
-          <div class="transfers-video">
-            <iframe width="100%" src="https://www.youtube.com/embed/p0grSBpBqh4?showinfo=0" frameborder="0" allowfullscreen></iframe>
-          </div>
-          <h1>Our types of transfers</h1>
-          <div class="tours-activities-top">
-             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas nunc arcu, quis pellentesque orci laoreet eget. Pellentesque laoreet eget sapien vitae sollicitudin.</p>
-          </div>
-        </div>
-        <div class="tours-activities-main"><h1>Best Tours &amp; Activities</h1></div>
-        <div class="transfers-landing-imgback transfers-landing-imgback-01">
-          <div class="transfers-landing-banner">
-            <div class="page-section">
-              <div class="transfers-banners-01">Shuttle</div>
-          </div>
-        </div>
-        <div class="tours-activities-imgback transfers-landing-imgback-02">
-          <div class="transfers-landing-banner">
-            <div class="page-section ">
-            <div class="transfers-banners-02">Private</div>
-            </div>
-          </div>
-        </div>
-        <div class="tours-activities-imgback transfers-landing-imgback-03">
-          <div class="transfers-landing-color">
-            <div class="page-section transfers-bannervideo-content">
-              <h1 class="transfers-bannervideo">Delux</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas nunc arcu, quis pellentesque orci laoreet eget. Pellentesque laoreet eget sapien vitae sollicitudin.</p>
-              <div class="tours-grid__item-footer transfers-item-footer">
-                  <button type="button" class="btn btn-notice btn-center btn-large">Book Now</button>
-                   <button type="button" class="btn btn-video1 btn-center btn-large"><div class="transfers-video-btn"><div class="icon-play-button"></div></div>Watch video</button>
               </div>
-            </div>
+              <label for="">Return Date &amp; Time</label>
+              <div class="form-group-flex-all">
+                <div class="form-field">
+                  <input type="text" class="form-control form-control--searchbox datepicker-control js-datepicker">
+                </div>
+                <div class="form-field form-field--time">
+                  <input type="text" class="form-control form-control--searchbox js-timepicker">
+                </div>
+              </div>
+              <label class="form-field form-field--inline">I am:
+                <input type="text" class="form-control form-control--searchbox searchbox-age"><span title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua" class="form-help-tooltip jqueryui-tooltip">?</span>
+              </label>
+              <div class="form-field--center">
+                <input type="submit" value="Continue" class="btn btn-notice btn-searchbox">
+              </div>
+            </form>
           </div>
         </div>
       </div>
-
-
-
-
-
+    </div>
+    ------>
+    <div class="page-main">
+      <div class="page-section car-rental-results flex-row">
+        <div class="flex-col flex-col-1-3">
+          <h2 class="col-title">Order Information</h2>
+          <div class="car-rental-info">
+            <h3 class="car-rental-info__header">Time and Place</h3>
+            <h4 class="car-rental-info__title">Pickup Information: </h4>
+            <ul class="car-rental-info__list">
+              <li class="car-rental-info__list-item">Kahului Airport</li>
+              <li class="car-rental-info__list-item">Hawaii, Maui, USA</li>
+              <li class="car-rental-info__list-item">Wednesday, April 1st, 2015</li>
+            </ul>
+            <h4 class="car-rental-info__title">RETURN Information: </h4>
+            <ul class="car-rental-info__list">
+              <li class="car-rental-info__list-item">Kahului Airport</li>
+              <li class="car-rental-info__list-item">Hawaii, Maui, USA</li>
+              <li class="car-rental-info__list-item">Wednesday, April 1st, 2015</li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex-col flex-col-2-3">
+          <h2 class="col-title">Car &amp; Rate</h2>
+          <div class="cars-list">
+            <div class="car-item selected">
+              <div class="car-item__type">Economy</div>
+              <div class="car-item__brand">Kia Rio or similar</div>
+              <div class="car-item__img-wrapper"><img src="./img/content/kia-rio.png" alt="" class="car-item__img"></div>
+              <div class="car-item__price">$36.50 us</div><a href="#" class="btn btn-large btn-notice">Select</a>
+            </div>
+            <div class="car-item">
+              <div class="car-item__type">Intermediate</div>
+              <div class="car-item__brand">Dodge Avenger or similar</div>
+              <div class="car-item__img-wrapper"><img src="./img/content/dodge-avenger.png" alt="" class="car-item__img"></div>
+              <div class="car-item__price">$36.50 us</div><a href="#" class="btn btn-large btn-notice">Select</a>
+            </div>
+            <div class="car-item">
+              <div class="car-item__type">Economy</div>
+              <div class="car-item__brand">Kia Rio or similar</div>
+              <div class="car-item__img-wrapper"><img src="./img/content/kia-rio.png" alt="" class="car-item__img"></div>
+              <div class="car-item__price">$36.50 us</div><a href="#" class="btn btn-large btn-notice">Select</a>
+            </div>
+            <div class="car-item">
+              <div class="car-item__type">Intermediate</div>
+              <div class="car-item__brand">Dodge Avenger or similar</div>
+              <div class="car-item__img-wrapper"><img src="./img/content/dodge-avenger.png" alt="" class="car-item__img"></div>
+              <div class="car-item__price">$36.50 us</div><a href="#" class="btn btn-large btn-notice">Select</a>
+            </div>
+            <div class="car-item">
+              <div class="car-item__type">Economy</div>
+              <div class="car-item__brand">Kia Rio or similar</div>
+              <div class="car-item__img-wrapper"><img src="./img/content/kia-rio.png" alt="" class="car-item__img"></div>
+              <div class="car-item__price">$36.50 us</div><a href="#" class="btn btn-large btn-notice">Select</a>
+            </div>
+          </div>
+          <ul class="pagination">
+            <li><a href="#" class="pagination-previous"></a></li>
+            <li><span class="pagination__item current">1</span></li>
+            <li><a href="#" class="pagination__item">2</a></li>
+            <li><a href="#" class="pagination__item">3</a></li>
+            <li><a href="#" class="pagination__item">4</a></li>
+            <li><a href="#" class="pagination__item">5</a></li>
+            <li><a href="#" class="pagination-next"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <footer class="page-footer">
       <div class="page-footer__row page-footer__row--dark">
         <div class="page-footer__row-content page-footer__row-content--top">
