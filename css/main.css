@@ -485,6 +485,10 @@ h3 a {
 .page-section--narrow {
   max-width: 1010px;
 }
+.page-section--narrowcart {
+  max-width: 1010px;
+  margin-top: 50px;
+}
 .section-header {
     background-color: #004b8e;
     color: #fff;
@@ -1234,7 +1238,7 @@ text-align: right;
     text-transform: uppercase;
     margin-top: -5px;
     float: right;
-    margin-right: -88px;
+    margin-right: -37px;
     z-index: 9;
 }
 .btn-red-arrow-grid {
@@ -2258,7 +2262,7 @@ li.ui-timepicker-selected .ui-timepicker-duration,
 }
 .dialog-message {
   color: #07284c;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 700;
   text-align: center;
 }
@@ -5019,7 +5023,7 @@ button.swiper-pagination-bullet {
   padding: 0;
 }
 .col-title {
-  background-color: #f3f3f3;
+  background-color: #ffffff;
   color: #07284c;
   font-size: 25px;
   line-height: 1;
@@ -5028,7 +5032,7 @@ button.swiper-pagination-bullet {
   text-transform: uppercase;
 }
 .car-rental-info {
-  background-color: #f3f3f3;
+  background-color: #ffffff;
   color: #07284c;
   padding: 20px;
 }
@@ -5049,6 +5053,7 @@ button.swiper-pagination-bullet {
   list-style: none;
   margin: 0 0 40px;
   padding: 0;
+  color: #616060;
 }
 .car-rental-info__list-item {
   margin-bottom: 10px;
@@ -5065,7 +5070,7 @@ button.swiper-pagination-bullet {
 }
 .car-item:hover,
 .car-item.selected {
-  box-shadow: 0 0 0 4px #fd9b00 inset;
+  box-shadow: 0 0 0 2px #fd9b00 inset;
 }
 .car-item__type {
   color: #07284c;
@@ -5075,7 +5080,7 @@ button.swiper-pagination-bullet {
   text-transform: uppercase;
 }
 .car-item__brand {
-  color: #07284c;
+  color: #616060;
   line-height: 1;
   /* font-weight: bold; */
   margin-bottom: 15px;
@@ -6078,11 +6083,11 @@ aside .b.op {
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
   position: relative;
-  height: 240px;
+  height: 280px;
 }
 @media (min-width: 480px) {
   .tour-item__img {
-    width: 33%;
+    width: 44%;
   }
 }
 .tour-item__body {
