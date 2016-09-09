@@ -5726,7 +5726,7 @@ button.swiper-pagination-bullet {
   min-height: 495px;
   position: relative;
 }
-.btn-video{
+.btn-video1{
   border:1px solid #ff8201;
   color: #ffffff;
   padding: 9px 20px 9px 9px;
@@ -5979,8 +5979,8 @@ input[type="radio"]:checked + .form-field-destination__label .styled-radio:after
 }
 .tour-row {
   margin-bottom: 20px;
-  border: 1px solid #dbdbdb;
-  background-color: #ffffff;
+  /* border: 1px solid #dbdbdb; */
+  /* background-color: #ffffff; */
 }
 .tour-item {
   background-color: #ffffff;
