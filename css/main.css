@@ -6887,10 +6887,12 @@ span.detailprice {
   display: none;
 }
 .faqs-tabs-nav {
-  background-color: #efead9;
+  background-color: #ffff;
+  border: 1px solid #dbdbdb;
   list-style: none;
   margin: 0;
   padding: 20px 0;
+  background-color: white;
 }
 .faqs-tabs-nav a {
   color: #07284c;
@@ -6903,17 +6905,17 @@ span.detailprice {
   transition: all .3s;
 }
 .faqs-tabs-nav a:hover {
-  background-color: #cbbd8f;
-  color: #fff;
+  background-color: #f9f7f7;
+  color: #fd9b00;
 }
 .faqs-tabs-nav .ui-state-active a {
-  background-color: #cbbd8f;
-  color: #fff;
+  background-color: #d4d4d4;
+  color: #07284c;
   position: relative;
 }
 .faqs-tabs-nav .ui-state-active a::after {
   content: '';
-  border-left: 20px solid #cbbd8f;
+  border-left: 20px solid #d4d4d4;
   border-top: 19px solid transparent;
   border-bottom: 19px solid transparent;
   position: absolute;
@@ -6936,18 +6938,19 @@ span.detailprice {
   border-bottom: 1px solid;
 }
 .faqs-nav-separator {
-  border-top: 20px solid #efead9;
-  border-bottom: 20px solid #efead9;
+  border-top: 20px solid #f9f7f7;
+  border-bottom: 20px solid #ffffff;
   background-color: #fff;
   height: 65px;
 }
 .faqs-tabs-content {
-  border-left: 3px solid #cbbd8f;
+  /* border-left: 3px solid #d4d4d4; */
   margin-top: 20px;
   position: relative;
 }
 .faqs-question {
-  background-color: #efead9;
+  background-color: #ffffff;
+  border: 1px solid #dbdbdb;
   margin-bottom: 15px;
   padding: 10px 15px;
   position: relative;
@@ -6957,7 +6960,7 @@ span.detailprice {
   padding: 8px 20px;
 }
 .faqs-header {
-  background-color: #cbbd8f;
+  background-color: #004b8d;
   color: #fff;
   font-size: 24px;
   margin-bottom: 1px;
