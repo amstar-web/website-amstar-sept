@@ -2264,6 +2264,18 @@ li.ui-timepicker-selected .ui-timepicker-duration,
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.home-transfers-imgback{
+  background: #ccc;
+    background-image: url(../img/home-transfers-01.jpg);
+    background-attachment: fixed;
+    background-color: #fff;
+    background-position: center top;
+    background-repeat: repeat-y;
+    background-size: cover;
+    height: 100%;
+    margin: 0 auto;
+    width: 100%;
+}
 @media (min-width: 768px) {
   .dialog__column {
     width: 238px;
