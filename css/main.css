@@ -2242,6 +2242,7 @@ li.ui-timepicker-selected .ui-timepicker-duration,
   color: #fff;
   height: 100%;
   background:rgba(7,16,37,0.5);
+  position: relative;
 }
 .home-deal-title{
   font-size: 25px;
@@ -2256,6 +2257,12 @@ li.ui-timepicker-selected .ui-timepicker-duration,
   color: #ffffff;
   padding: 12px 30px ;
   text-transform: uppercase;
+}
+.home-deals-container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 @media (min-width: 768px) {
   .dialog__column {
