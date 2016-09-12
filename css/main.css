@@ -2277,6 +2277,12 @@ li.ui-timepicker-selected .ui-timepicker-duration,
     margin: 0 auto;
     width: 100%;
 }
+.home-destination-content{
+    color: #fff;
+    height: 100%;
+    background: rgba(10,108,208,0.5);
+    position: relative;
+}
 .tours-activities-color.home-transfers-container{
     background: none;
 }
