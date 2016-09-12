@@ -2237,6 +2237,12 @@ li.ui-timepicker-selected .ui-timepicker-duration,
     width: 100%;
     background: #ccc;
 }
+.home-destination-content {
+    color: #fff;
+    height: 100%;
+    background: rgba(7,16,37,0.5);
+    position: relative;
+}
 @media (min-width: 768px) {
   .dialog__column {
     width: 238px;
