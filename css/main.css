@@ -5417,7 +5417,6 @@ button.swiper-pagination-bullet {
 @media (min-width: 768px) {
   .tours-grid__item,
   .home-icons-item {
-    width: 31.33%;
   }
   .home-deals-item{
     width: 33.33%;
