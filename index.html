@@ -677,8 +677,8 @@
       </div>-->
     </footer>
     <div id="register-dialog" class="dialog">
-      <form action="#">
-        <div class="dialog__title">Register your personal account</div>
+      <div class="dialog-title">Register your personal account</div>
+      <form action="#" class="dialog-container">
         <div class="flex-row">
           <div class="flex-col">
             <div class="form-field">
@@ -740,15 +740,18 @@
       </form>
     </div>
     <div id="login-dialog" class="dialog">
-      <form action="#">   
+      <div class="dialog-title">Login</div>
+      <form action="#" class="dialog-container">   
         <div class="form-field">
-          <input type="text" placeholder="*Email Address" class="form-control">
+        <label class="dialog-label">Email*</label>
+          <input type="text" placeholder="Enter your email" class="form-control">
         </div>
         <div class="form-field">
-          <input type="password" placeholder="*Password" class="form-control">
+        <label  class="dialog-label">Password*</label>
+          <input type="password" placeholder="Enter your password" class="form-control">
         </div>
         <div class="form-field--center">
-          <button type="submit" class="btn btn-large btn-notice">Login</button>
+          <button type="submit" class="btn btn-large btn-notice">Sign In</button>
         </div>
       </form>
       <div class="dialog__footer">
