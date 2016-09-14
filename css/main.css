@@ -2226,7 +2226,6 @@ li.ui-timepicker-selected .ui-timepicker-duration,
     -ms-flex: 0 1 auto;
     flex: 0 1 auto;
     /* margin: 0 1% 20px; */
-    padding: 15px;
     position: relative;
     text-decoration: none;
     color: #0a4575;
@@ -2234,6 +2233,113 @@ li.ui-timepicker-selected .ui-timepicker-duration,
     width: 100%;
     background: #ccc;
 }
+.home-deals-item-header{
+  height: 250px;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.home-deals-content{
+  color: #fff;
+  height: 100%;
+  background:rgba(7,16,37,0.5);
+  position: relative;
+}
+.home-deal-title{
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.home-deal-promo{
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.btn-deals{
+  border: 1px solid #fff;
+  color: #ffffff;
+  padding: 12px 30px ;
+  text-transform: uppercase;
+}
+.home-deals-container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.home-destination-content {
+  color: #fff;
+  height: 100%;
+  background: rgba(10,108,208,0.5);
+  position: relative;
+  text-transform: uppercase;
+}
+.home-destination-title{
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.home-transfers-imgback{
+  background: #ccc;
+    background-image: url(../img/home-transfers-01.jpg);
+    background-attachment: fixed;
+    background-color: #fff;
+    background-position: center top;
+    background-repeat: repeat-y;
+    background-size: cover;
+    height: 100%;
+    margin: 0 auto;
+    width: 100%;
+}
+.tours-activities-color.home-transfers-container{
+    background: none;
+}
+.home-subtitle{
+  color: #145895;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+.home-transfers-label {
+  color: #004b8d;
+  text-align: center;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+.home-transfers-icon{
+  display: inline-block;
+  color: #004b8d;
+  font-size: 16px;
+  margin-right: 10px;
+}
+.home-transfers-list ul{
+  list-style-type: none;
+}
+.home-transfers-list li{
+  margin-bottom: 20px;
+}
+.tours-activities-grid .header-transfers-images.tours-grid__item-header{
+  height: 210px;
+}
+.btn-home-transfers{
+  width: 75%;
+}
+.home-deals-item.home-destinations-item {
+  width: 66.66%;
+}
+.home-transfers-combo{
+  margin-bottom: 10px;
+  text-align: center;
+  margin: 0 auto 10px;
+  width: 75%;
+}
+  .home-destination-name{
+    margin-bottom: 10px;
+    display: inline-block;
+    font-size: 20px;
+    line-height: 33px;
+    text-align: left;
+    margin: 0 30px;
+  }
 @media (min-width: 768px) {
   .dialog__column {
     width: 238px;
@@ -2245,6 +2351,19 @@ li.ui-timepicker-selected .ui-timepicker-duration,
     position: absolute;
     z-index: 999;
   }
+}
+@media (max-width: 770px){
+  .home-destination-name {
+    margin-bottom: 10px;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: left;
+    margin: 0 1rem;
+}
+.home-destination-title{
+  font-size: 1.5rem;
+}
 
 }
 .dialog__column-info {
@@ -2276,6 +2395,11 @@ li.ui-timepicker-selected .ui-timepicker-duration,
   .message-img {
     display: inline-block;
     margin: 0 80px;
+  }
+}
+@media (min-width: 770px) {
+  .home-deals-item-header{
+    height: 340px;
   }
 }
 @media (max-width: 1023px) {
@@ -2525,6 +2649,24 @@ li.ui-timepicker-selected .ui-timepicker-duration,
   }
   .page-header__top-section{
     width: 50%
+  }
+  .home-deals-item.home-destinations-item{
+    width: 100%;
+  }
+  .home-destination-name{
+    margin: 0;
+    font-size: 10px;
+    line-height: 20px;
+  }
+  .home-transfers-list ul{
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
+  }
+  .tours-activities-color .tours-activities-top{
+    margin-top: 50%;
   }
 }
 @media (max-width: 480px){
@@ -4752,11 +4894,15 @@ button.swiper-pagination-bullet {
 }
 .transfer-item__options {
   display: none;
-  padding: 15px 25px 0px;
+  padding: 35px 25px 15px;
 }
 .transfer-item--active .transfer-item__options {
   display: block;
 }
+.transfer-item--active .transfer-item__button{
+  display: none;
+}
+
 .transfers-bannervideo{
   font-size: 1.8em;
   text-align: center;
@@ -4834,6 +4980,8 @@ button.swiper-pagination-bullet {
   }
   .transfer-item__add-to-cart {
     margin: 10px 0 0;
+    position: absolute;
+    right: 10px;
   }
   .transfer-item__column-three {
     padding: 10px 25px;
@@ -4854,6 +5002,7 @@ button.swiper-pagination-bullet {
         -ms-flex: 1 1 auto;
             flex: 1 1 auto;
     margin: 0 10px;
+    width: 50%;
   }
   .airline-form-field {
     width: 60%;
@@ -4867,11 +5016,12 @@ button.swiper-pagination-bullet {
     margin-top: -15px;
   }
   .transfer-item__add-to-cart {
-    position: relative;
-    top: 0px;
-    /* left: 50px; */
-    float: right;
+    position: absolute;
+    right: 10px;
   }
+}
+.airport-transfers-addbtn{
+  position: relative;
 }
 .searchbox-section {
   max-width: 1090px;
@@ -5417,6 +5567,7 @@ button.swiper-pagination-bullet {
 @media (min-width: 768px) {
   .tours-grid__item,
   .home-icons-item {
+    width: 31.33%;
   }
   .home-deals-item{
     width: 33.33%;
@@ -5721,7 +5872,7 @@ button.swiper-pagination-bullet {
   min-height: 495px;
   position: relative;
 }
-.btn-video1{
+.btn-video{
   border:1px solid #ff8201;
   color: #ffffff;
   padding: 9px 20px 9px 9px;
