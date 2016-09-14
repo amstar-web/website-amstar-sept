@@ -2044,7 +2044,6 @@ li.ui-timepicker-selected .ui-timepicker-duration,
 }
 .ui-dialog-content {
   position: relative;
-  padding: 0px 0px 25px;
   overflow: auto;
 }
 .ui-dialog .ui-dialog-buttonpane {
@@ -2116,6 +2115,9 @@ li.ui-timepicker-selected .ui-timepicker-duration,
 .dialog-label{
   color: #004b8d;
   text-transform: uppercase;
+}
+.dialog-container .btn-large{
+  font-size: 16px;
 }
 /* Overlays */
 .ui-widget-overlay {

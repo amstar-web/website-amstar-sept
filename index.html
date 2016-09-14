@@ -49,12 +49,12 @@
                     <div class="btn-top"><button id="register-dialog-trigger" type="button" data-id="register-dialog" class="user-action btn js-dialog-button">Live Chat</button></div>
                   </div>
                 </li>
-                <li class="user-action-item">
+                <!--<li class="user-action-item">
                 <div class="menu-icon-item">
                   <div class="menu-icon"><div class="icon-login"></div></div>
                   <div class="btn-top"><button id="travel-agent-dialog-trigger" type="button" data-id="travel-agent-dialog" class="user-action btn js-dialog-button user-action">Travel Agents</button></div>
                   </div>
-                </li>
+                </li>-->
                 <li class="user-action-item">
                   <div class="menu-icon-item">
                       <div class="menu-icon"><div class="icon-internet"></div></div>
@@ -678,66 +678,15 @@
     </footer>
     <div id="register-dialog" class="dialog">
       <div class="dialog-title">Register your personal account</div>
-      <form action="#" class="dialog-container">
+      <div class="dialog-container">
         <div class="flex-row">
           <div class="flex-col">
-            <div class="form-field">
-              <select name="passenger-title" class="form-control jqueryui-selectmenu">
-                <option disabled selected>*Title</option>
-                <option value="1">Mr.</option>
-                <option value="2">Mrs.</option>
-                <option value="3">Ms.</option>
-                <option value="4">Dr.</option>
-              </select>
-            </div>
-            <div class="form-field">
-              <input type="text" placeholder="*First Name" class="form-control">
-            </div>
-            <div class="form-field">
-              <input type="text" placeholder="*Last Name" class="form-control">
-            </div>
-            <div class="form-field">
-              <input type="text" placeholder="*City" class="form-control">
-            </div>
-            <div class="form-field">
-              <input type="text" placeholder="*Zip Code" class="form-control">
-            </div>
-            <div class="form-field">
-              <select name="#" class="form-control jqueryui-selectmenu">
-                <option disabled selected>*Country</option>
-                <option value="1">Option One</option>
-                <option value="2">Option Two</option>
-                <option value="3">Option Three</option>
-              </select>
-            </div>
+            <button type="submit" class="btn btn-large btn-notice">Travel Agent</button>
           </div>
           <div class="flex-col">
-            <div class="form-field form-field--travel-agents-button">
-              <button type="button" data-id="travel-agent-dialog" class="btn btn-primary js-dialog-button">Travel Agents <br> Click Here</button>
-            </div>
-            <div class="form-group-flex">
-              <div class="form-field">
-                <input type="text" placeholder="*Area Code" class="form-control">
-              </div>
-              <div class="form-field">
-                <input type="text" placeholder="*Cel No." class="form-control">
-              </div>
-            </div>
-            <div class="form-field">
-              <input type="text" placeholder="*Email Address" class="form-control">
-            </div>
-            <div class="form-field">
-              <input type="password" placeholder="*Password" class="form-control">
-            </div>
-            <label class="form-field form-field--small form-checkbox form-checkbox--left form-checkbox--register">Include me <br> on your mailing list
-              <input type="checkbox"><span class="styled-checkbox styled-checkbox--left"></span>
-            </label>
-          </div>
+            <button type="submit" class="btn btn-large btn-notice">Customer</button>
         </div>
-        <div class="form-field--center">
-          <button type="submit" class="btn btn-large btn-notice">Register</button>
-        </div>
-      </form>
+      </div>
     </div>
     <div id="login-dialog" class="dialog">
       <div class="dialog-title">Login</div>
