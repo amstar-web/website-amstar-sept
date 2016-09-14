@@ -4802,6 +4802,7 @@ button.swiper-pagination-bullet {
   border-color: #fd9b00;
   cursor: default;
   outline: 3px solid #fd9b00;
+  padding-bottom: 50px;
 }
 .transfer-item__column {
   padding: 15px;
