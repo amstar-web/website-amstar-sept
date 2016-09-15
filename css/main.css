@@ -1,6 +1,3 @@
-
-
-
 @import url('style.css');
 
 .sr-only {
@@ -368,7 +365,7 @@ th {
   box-sizing: border-box;
 }
 body {
-  background-color: #f9f7f7;
+  background-color: #fff;
   color: #616060;
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
@@ -392,7 +389,7 @@ h3 a {
   text-decoration: none;
 }
 .page-main{
-  background: #f9f7f7;
+  background: #fff;
 }
 .table-grid {
   border-collapse: separate;
@@ -2176,6 +2173,15 @@ li.ui-timepicker-selected .ui-timepicker-duration,
 .page-header.home-page{
   width: 100%;
 }
+.page-header{
+  background:#fff;
+}
+.page-header.home-page{
+  background: none;
+}
+.home-main .tours-activities-main{
+  margin-top: 140px;
+}
 .home-page .top-nav__item-title{
   color: #fff;
 }
@@ -2227,7 +2233,7 @@ li.ui-timepicker-selected .ui-timepicker-duration,
     background-repeat: repeat-y;
     background-size: cover;
     height: 100%;
-    margin: 0 auto;
+    margin: 130px auto 0;
     width: 100%;
 }
 .home-deals-item{
@@ -2357,6 +2363,14 @@ li.ui-timepicker-selected .ui-timepicker-duration,
     text-align: left;
     margin: 0 30px;
   }
+  .home-border {
+  background : #000000;
+  background : rgba(0, 0, 0, 1);
+  border-radius : 186px 0px 0px 0px  / 0px;
+  -moz-border-radius : 186px 0px 0px 0px  / 0px;
+  -webkit-border-radius : 186px 0px 0px 0px  / 0px;
+}
+
 @media (min-width: 768px) {
   .dialog__column {
     width: 238px;
@@ -2364,9 +2378,19 @@ li.ui-timepicker-selected .ui-timepicker-duration,
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
   }
+  .home-border-container{
+     position: absolute;
+    bottom: -5px;
+    left: 45%;
+    color: #fff;
+    font-size: 41px;
+}
   .page-header.home-page{
     position: absolute;
     z-index: 999;
+  }
+  .ui-selectmenu-button span.ui-selectmenu-text{
+    width: 300px;
   }
 }
 @media (max-width: 770px){
@@ -5118,7 +5142,7 @@ button.swiper-pagination-bullet {
 @media (min-width: 768px) {
   .searchbox {
     position: absolute;
-    bottom: 15px;
+    bottom: 100px;
     width: 100%
     /*left: 135px;*/
   }
@@ -5632,7 +5656,7 @@ button.swiper-pagination-bullet {
   color: #004b8d;
   text-transform: uppercase;
   text-align: center;
-  font-size: 30px;
+  font-size: 34px;
   margin: 20px 0;
 }
 .tours-activities-top{
