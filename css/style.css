@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'amstar';
-  src:  url('fonts/amstar.eot?t7bcip');
-  src:  url('fonts/amstar.eot?t7bcip#iefix') format('embedded-opentype'),
-    url('fonts/amstar.ttf?t7bcip') format('truetype'),
-    url('fonts/amstar.woff?t7bcip') format('woff'),
-    url('fonts/amstar.svg?t7bcip#amstar') format('svg');
+  src:  url('fonts/amstar.eot?b8z3ds');
+  src:  url('fonts/amstar.eot?b8z3ds#iefix') format('embedded-opentype'),
+    url('fonts/amstar.ttf?b8z3ds') format('truetype'),
+    url('fonts/amstar.woff?b8z3ds') format('woff'),
+    url('fonts/amstar.svg?b8z3ds#amstar') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,6 +24,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-top:before {
+  content: "\eaf0";
+}
 .icon-airplane:before {
   content: "\ea9f";
 }
