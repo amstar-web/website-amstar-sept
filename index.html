@@ -58,7 +58,7 @@
                 <li class="user-action-item">
                   <div class="menu-icon-item">
                       <div class="menu-icon"><div class="icon-internet"></div></div>
-                      <div class="btn-top"><button id="register-dialog-trigger" type="button" data-id="register-dialog" class="user-action btn js-dialog-button">Language</button></div>
+                      <div class="btn-top"><button id="language-dialog-trigger" type="button" data-id="language-dialog" class="user-action btn js-dialog-button">Language</button></div>
                   </div>
                 </li>
                 <!--  <li class="user-action-item">
@@ -67,7 +67,7 @@
                 <li class="user-action-item">
                   <div class="menu-icon-item">
                       <div class="menu-icon"><div class="icon-shopping-cart"></div></div>
-                      <div class="btn-top"><a href="./cart.html" class="user-action btn user-action">Cart</a></div>
+                      <div class="btn-top"><button id="cart-dialog-trigger" type="button" data-id="cart-dialog" class="user-action btn js-dialog-button">Cart</button></div>
                   </div>
                 </li>
                 <li class="user-action-item">
@@ -691,6 +691,61 @@
         </div>
       </div>
     </div>
+
+    <div id="language-dialog" class="dialog">
+          <div class="dialog-title">Language</div>
+          <div class="dialog-container">
+            <div class="flex-row">
+              <div class="flex-col">
+                <div class="flag-item">
+                   <div class="flag-en"></div>
+                   English / Inglés
+                </div>
+              </div>
+              <div class="flex-col">
+                <div class="flag-item">
+                  <div class="flag-es"></div>
+                  Spanish / Español
+                </div>
+            </div>
+          </div>
+        </div>
+
+      <div id="cart-dialog" class="dialog">
+          <div class="dialog-title">Cart</div>
+          <div class="dialog-container">
+          <div class="item-product">1 item</div>
+          <div class="flex-row cart-dialog-info">
+              <div class="flex-col">
+                <div class="cart-dialog-image"></div>
+              </div>
+              <div class="flex-col cart-dialog-details">
+              <div class="cart-dialoge-cancel"><div class="icon-multiply"></div></div>
+              <div class="cart-dialog-tour">Xplor Park</div>
+              <div class="cart-dialog-qty">Qty 1</div>
+                <div class="cart-dialog-tour-price">$60.00</div>
+            </div>
+          </div>
+          <hr class="line-cart">
+          <div class="flex-row">
+              <div class="flex-col">
+                <div class="cart-dialog-total">Total</div>
+              </div>
+              <div class="flex-col">
+                <div class="cart-dialog-price">$60.00</div>
+            </div>
+          </div>
+            <div class="flex-row">
+              <div class="flex-col">
+                <button type="button" class="btn btn-cart-view">View Cart</button>
+              </div>
+              <div class="flex-col">
+                <button type="button" class="btn btn-cart-check btn-notice">Checkout</button>
+            </div>
+          </div>
+      </div>    
+
+
     <div id="login-dialog" class="dialog">
       <div class="dialog-title">Login</div>
       <form action="#" class="dialog-container">   
