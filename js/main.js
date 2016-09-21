@@ -148,7 +148,7 @@ $(function() {
   // jQuery UI Dialog
   $( "#register-dialog" ).dialog({
     autoOpen: false,
-    dialogClass: "ui-dialog--gray hasArrow",
+    dialogClass: "ui-dialog--gray",
     draggable: false,
     modal: true,
     resizable: false,
@@ -158,11 +158,40 @@ $(function() {
       of: '#register-dialog-trigger',
       collision: 'none'
     },
-    width: 532
+    width: 360
+  });
+  $( "#language-dialog" ).dialog({
+    autoOpen: false,
+    dialogClass: "ui-dialog--gray",
+    draggable: false,
+    modal: true,
+    resizable: false,
+    position: {
+      my: "left-20 top+20", 
+      at: "left bottom", 
+      of: '#language-dialog-trigger',
+      collision: 'none'
+    },
+    width: 305
+  });
+   $( "#cart-dialog" ).dialog({
+    autoOpen: false,
+    dialogClass: "ui-dialog--gray",
+    draggable: false,
+    modal: true,
+    resizable: false,
+    position: {
+      my: "left-50 top+20", 
+      at: "left bottom", 
+      of: '#cart-dialog-trigger',
+      collision: 'none'
+    },
+    width: 205
   });
   $( "#login-dialog" ).dialog({
     autoOpen: false,
-    dialogClass: "ui-dialog--gray hasArrow",
+    //dialogClass: "ui-dialog--gray hasArrow",
+    dialogClass: "ui-dialog--gray",
     draggable: false,
     modal: true,
     resizable: false,
@@ -181,7 +210,7 @@ $(function() {
     modal: true,
     resizable: false,
     position: {
-      my: "left-10 top+20", 
+      my: "left-340 top+20", 
       at: "left bottom", 
       of: '#travel-agent-dialog-trigger',
       collision: 'none'
@@ -230,6 +259,22 @@ $(function() {
              .siblings('.transfer-item').removeClass('transfer-item--active');
     });
   };
+
+  // select transfers OTHEr
+ 
+  //$('#transfer-arrival-flight-no').on('change', function(event) {
+   // console.log('hola');
+   // if ( this.value == 'other')
+   //   {
+   //     $(".other-option").show();
+   //   }
+   //   else
+   //   {
+  //    $(".other-option").hide();
+  // }
+//});
+  
+
 
   function toggleMenu() {
 
