@@ -7467,4 +7467,49 @@ display: inline-block;
   margin-bottom: 20px;
   text-align: center;
 }
+.ta-profile-pic{
+  background:url(../img/profile-pic.png) no-repeat center;
+  padding-bottom: 70px;
+  background-size: contain;
+}
+@media (max-width: 769px){
+  .ta-form-right .btn-large{
+    font-size: 15px;
+    padding: 10px;
+    min-width: 113px;
+  }
+  .form-field-state{
+    width: 59%;
+  }
+  .form-field-sm{
+    width: 37%;
+  }
+}
+@media (max-width: 376px){
+  .ta-form-left {
+    padding: 20px;
+    border-right: none;
+    width: 100%;
+  }
+  .ta-form-right {
+    padding: 20px;
+    width: 100%;
+  }
+  .ta-text-footer{
+    position: initial;
+    margin-bottom: 10px;
+  }
+  .ta-item-footer{
+    margin-top: 0;
+  }
+  .ta-image-profile{
+    text-align: center;
+  }
+  .form-field-state {
+    width: 60%;
+  }
+  .form-field-sm {
+    width: 38%;
+  }
+}
 /*# sourceMappingURL=../maps/main.css.map */
