@@ -7295,7 +7295,7 @@ display: inline-block;
   display: none;
 }
 .btn-red-arrow {
-    margin-right: -45px !important;
+    margin-right: -79px !important;
 }
 .btn-large {
     font-size: 14px;
@@ -7569,6 +7569,7 @@ display: inline-block;
   .results-container{
     text-align: center;
   }
+
 }
 @media (max-width: 376px){
   .ta-form-left {
@@ -7602,6 +7603,7 @@ display: inline-block;
   .tours-grid .arrow{
     top:0;
   }
+  
 }
 .signup-container {
     margin: 0 auto;
@@ -7624,6 +7626,14 @@ display: inline-block;
 @media (max-width: 415px){
   .tour-item__img {
     margin: 0;
+  }
+  .tours-conatiner{
+    width: inherit;
+    margin: 0 5px;
+  }
+}@media (max-width: 321px){
+    .btn-red-arrow {
+    margin-right: -62px !important;
 }
 }
 /*# sourceMappingURL=../maps/main.css.map */
