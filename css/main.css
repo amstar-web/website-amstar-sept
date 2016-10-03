@@ -444,7 +444,8 @@ h3 a {
     .tours-filter-grid {
   display: none;
 }
-  .responsive-table thead {
+
+ .responsive-table thead {
     display: none;
   }
   .responsive-table tr {
@@ -6052,7 +6053,7 @@ button.swiper-pagination-bullet {
     z-index: 51;
 }
 .media-grid {
-  /*top: 81% !important;*/
+  /* top: 81% !important; */
 }
 .media .btn-photo{
    background-color: rgba(253, 155, 0, 0.87);
@@ -6303,6 +6304,9 @@ input[type="radio"]:checked + .form-field-destination__label .styled-radio:after
     /* min-height: 3000px; */
     /* position: fixed; */
 }
+.selecthotel{
+  text-align: center;
+}
 aside .b.blue {
     background: #004b8d;
     color: #fff;
@@ -6330,7 +6334,7 @@ aside .b ul li:hover {
 aside .b ul li:active{
     color: #fd9b00;
     background-color: #f3f3f3;
-    padding: 9px 0px 7px 2px;
+    padding: 5px 0px 5px 2px;
 }
 aside .b h4 {
     color: #004b8e;
@@ -7318,7 +7322,7 @@ display: inline-block;
     font-size: 14px;
   }
   .tours-grid .arrow{
-    margin-top: 22%;
+    margin-top: -2%;
   }
   .filtername {
     /* display: none; */
