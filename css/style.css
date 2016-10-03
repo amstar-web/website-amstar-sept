@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'amstar';
-  src:  url('fonts/amstar.eot?b8z3ds');
-  src:  url('fonts/amstar.eot?b8z3ds#iefix') format('embedded-opentype'),
-    url('fonts/amstar.ttf?b8z3ds') format('truetype'),
-    url('fonts/amstar.woff?b8z3ds') format('woff'),
-    url('fonts/amstar.svg?b8z3ds#amstar') format('svg');
+  src:  url('fonts/amstar.eot?cqhumq');
+  src:  url('fonts/amstar.eot?cqhumq#iefix') format('embedded-opentype'),
+    url('fonts/amstar.ttf?cqhumq') format('truetype'),
+    url('fonts/amstar.woff?cqhumq') format('woff'),
+    url('fonts/amstar.svg?cqhumq#amstar') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,9 +24,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-top:before {
-  content: "\eaf0";
-}
 .icon-airplane:before {
   content: "\ea9f";
 }
@@ -86,6 +83,9 @@
 }
 .icon-suitcase2:before {
   content: "\eab0";
+}
+.icon-wallet:before {
+  content: "\eaf0";
 }
 .icon-water:before {
   content: "\eab1";
