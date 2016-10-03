@@ -83,7 +83,7 @@
                 <li class="tab-title ui-state-active"><a href="#tours-d1">Tours Details</a></li>
                 <li class="tab-title"><a href="#tours-d2">Tour Options</a></li>
                 <li class="tab-title"><a href="#tours-d3">Reviews</a></li>
-                <li class="tab-title"><a href="#tours-d4">Highlights</a></li>
+                <li class="tab-title"><a href="#tours-d4">Practical Info</a></li>
                 <li class="tab-title"><a href="#tours-d5">Calendar</a></li>
                 </ul>
               </div>
@@ -115,10 +115,11 @@
                   <h2 class="page-subheading">Tour name</h2>
                 </div>
                 <div class="tour-detail-content">
-                    <div class="page-subheading-title">Enjoy the adventure!</div>
+                    <div class="page-subheading-subtitle">Enjoy the adventure!</div>
+                    <p>&nbsp;</p>
                     <p>Fly over unspoiled Mayan jungle on zip lines and enjoy magnificent views, swim in underground rivers, ride an amphibious vehicle and raft through mystical underground waters. Experience Xplor the newest, hottest, coolest adventure park!</p>
                     <p>Xplor adventure park in Riviera Maya is a unique underground world with thrilling circuits that invite you to rediscover your senses and emotions within nature. Enjoy the adventure while being guided from take off to landing. Fly over the jungle on zip lines with awesome views and refreshing water landings. Later, take on a challenge crossing hanging bridges and exploring 3.11 miles of fascinating jungle pathways on amphibious vehicles.</p>
-                    <p>&nbsp;</p>
+                    <hr>
                     <div class="page-subheading-title">What&#39;s included</div>
                     <ul>
                       <li>English speaking guides</li>
@@ -142,7 +143,7 @@
                         <div class="known-detail"><span class="tour-know__criteria-label">Language:</span> English</div>
                       </li>
                       <li>
-                        <div class="item-know-icon"><div class="icon-calendar-1"></div></div> 
+                        <div class="item-know-icon"><div class="icon-calendar-check"></div></div> 
                         <div class="known-detail"><span class="tour-know__criteria-label">Season:</span> All Year Round</div>
                       </li>
                       <li>
@@ -194,13 +195,13 @@
                 <hr>
               </div>
               <div id="tours-d4" class="page-block page-tour-content">
-               <h2 class="page-subheading">Highlights</h2>
+               <h2 class="page-subheading">Practical Info</h2>
                 <hr>
               </div>
-              <div id="tours-d5" class="page-block page-tour-content">
+              <!--<div id="tours-d5" class="page-block page-tour-content">
                 <h2 class="page-subheading">Calendar</h2>
                  <hr>
-              </div>
+              </div>-->
           </div>
           <!--<div class="page-block">
             <h2 class="page-subheading">Video</h2>
@@ -246,16 +247,12 @@
             <div class="form-field">
               <label>Select Date from Calendar
                 <input type="text" class="form-control form-control--searchbox datepicker-control js-datepicker--extended">
-              </label><span title="Help text should be here" class="form-tooltip form-tooltip--extend jqueryui-tooltip">?</span>
+              </label><span title="Help text should be here" class="form-tooltip form-tooltip--extend jqueryui-tooltip"><div class="tour-details-moreinfo icon-info"></div></span>
             </div>
              <div class="form-field">
               <label>Select the start time:
-                <select name="tour-select-time" class="form-control form-control--searchbox jqueryui-selectmenu">
-                  <option value="1">Option One</option>
-                  <option value="2">Option Two</option>
-                  <option value="3">Option Three</option>
-                </select><span title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." class="form-tooltip form-tooltip--extend jqueryui-tooltip">?</span>
-              </label>
+                <input type="text" class="form-control form-control--searchbox datepicker-control js-datepicker--extended">
+              </label><span title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." class="form-tooltip form-tooltip--extend jqueryui-tooltip"><div class="tour-details-moreinfo icon-info"></div></span>
             </div>
             <div class="form-field">
               <label>Select hotel &amp;/or pick up location &amp; time:
@@ -264,7 +261,7 @@
                   <option value="1">Option One</option>
                   <option value="2">Option Two</option>
                   <option value="3">Option Three</option>
-                </select><span title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." class="form-tooltip form-tooltip--extend jqueryui-tooltip">?</span>
+                </select><span title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." class="form-tooltip form-tooltip--extend jqueryui-tooltip"><div class="tour-details-moreinfo icon-info"></div></span>
               </label>
             </div>
             <hr>
@@ -278,14 +275,14 @@
             <div class="tour-availability__note">Select the # of pax for each option: </div>
             <div class="tour-availability__title">Xplor Entrance Only</div>
             <div class="form-group-flex-all">
-              <label class="form-field"><div class="form-client">Adult <span title="Over 12 years old" class="form-tooltip jqueryui-tooltip form-client-info">?</span></div><span class="tour-availability__prices">$104.00</span>
+              <label class="form-field"><div class="form-client">Adult <span title="Over 12 years old" class="form-tooltip jqueryui-tooltip form-client-info"><div class="tour-details-moreinfo icon-info"></div></span></div><span class="tour-availability__prices">$104.00</span>
                 <select id="sb-adult" name="sb-adult" class="form-control form-control--searchbox jqueryui-selectmenu">
                   <option value="1">1</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
                 </select>
               </label>
-              <label class="form-field"><div class="form-client">Children <span title="6 to 12 years old" class="form-tooltip jqueryui-tooltip form-client-info">?</span></div> <span class="tour-availability__prices">$52.00</span>
+              <label class="form-field"><div class="form-client">Children <span title="6 to 12 years old" class="form-tooltip jqueryui-tooltip form-client-info"><div class="tour-details-moreinfo icon-info"></div></span></div> <span class="tour-availability__prices">$52.00</span>
                 <select id="sb-child" name="sb-child" class="form-control form-control--searchbox jqueryui-selectmenu">
                   <option value="0">0</option>
                   <option value="1">1</option>
@@ -293,7 +290,7 @@
                   <option value="3">3</option>
                 </select>
               </label>
-              <label class="form-field"> <div class="form-client">Infant <span title="1 to 5 years old" class="form-tooltip jqueryui-tooltip form-client-info">? </span></div> <span class="tour-availability__prices">$45.00</span>
+              <label class="form-field"> <div class="form-client">Infant <span title="1 to 5 years old" class="form-tooltip jqueryui-tooltip form-client-info"><div class="tour-details-moreinfo icon-info"></div></span></div> <span class="tour-availability__prices">$45.00</span>
                 <select id="sb-infant" name="sb-infant" class="form-control form-control--searchbox jqueryui-selectmenu">
                   <option value="0">0</option>
                   <option value="1">1</option>
