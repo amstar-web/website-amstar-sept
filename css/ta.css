@@ -2262,5 +2262,21 @@ textarea.notepad-text-control {
       padding: 0 38px 22px;
 }
   }
-
+.ta-menu-aside a{
+  color: #004b8d;
+  text-decoration: none;
+  cursor: pointer;
+}
+.ta-menu-aside-item{
+  padding: 10px 20px;
+  background: #F5F5F5;
+  display: block;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.ta-menu-aside-item:hover, 
+.ta-menu-aside-item:active, 
+.ta-menu-aside-item-active{
+  background: #eaeaea;
+}
 /*# sourceMappingURL=../maps/ta.css.map */
