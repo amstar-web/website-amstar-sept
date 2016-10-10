@@ -8,9 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="./img/favicon.png">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/ta.css">
   </head>
   <body>
- <!--<header class="page-header">
+   <!---- <header class="page-header">
       <div class="page-header__top-section">
         <div class="page-header__row page-top">
           <form class="site-search">
@@ -40,327 +41,205 @@
           </div><a href="./index.html" class="site-logo-wrapper"><img src="./img/logo.png" alt="Amstar dmc homepage" class="site-logo"></a>
         </div>
       </div>
-    </header>-->
-    
-    <div class="page-main">
-      <div class="page-section">
-        <h1 class="page-heading">Tour Details Page</h1>
-      </div>
-      
-      <div class="page-section flex-row">
-        <div class="flex-col flex-col-2-3"> 
-          <div class="page-block tour-gallery-section">
-        <!--<div class="tour-gallery-thumbs">
-          <div style="background-image: url('./img/content/about.jpg')" class="tour-gallery-thumb"></div>
-          <div style="background-image: url('./img/content/about2.jpg')" class="tour-gallery-thumb"></div>
-          <div style="background-image: url('./img/content/about3.jpg')" class="tour-gallery-thumb"></div>
-          <div style="background-image: url('./img/content/about.jpg')" class="tour-gallery-thumb"></div>
-        </div>-->
-        <div class="tours-image-container">
-          <div class="arrow">
-                      <div class="arrow-text btn-left">
-                        <span class="icon-back"></span>
-                      </div>
-                      <div class="arrow-text btn-right">
-                        <span class="icon-next"></span> 
-                      </div>  
-                  </div>
-                  <div class="media"> 
-                    <div class="btn-photo">
-                      <span class="icon-photo"></span>
-                    </div>
-                    <div class="btn-video">
-                      <span class="icon-video-camera"></span>
-                    </div> 
-                  </div>  
-            <div style="background-image: url('./img/content/about.jpg')" class="tour-gallery-main"></div>
+    </header>
+    <nav class="top-nav-box">
+      <button id="menu-trigger" type="button" class="menu-trigger"><span class="menu-trigger__bar"></span></button>
+      <ul id="top-nav" class="top-nav top-nav--first-level">
+        <li class="top-nav__item"><a href="./index.html" class="top-nav__item-title">Home</a></li>
+        <li class="top-nav__item"><a href="./airport_transfers.html" class="top-nav__item-title">Airport Transfers</a></li>
+        <li class="top-nav__item"> <span class="top-nav__item-title top-nav__item-title--submenu js-submenu-trigger">Destinations</span>
+          <ul class="top-nav top-nav__submenu top-nav--second-level">
+            <li class="top-nav__item"><a href="./destinations.html" class="top-nav__item-title top-nav__item-title--submenu js-submenu-trigger">Mexico</a>
+              <ul class="top-nav top-nav__submenu top-nav--third-level">
+                <li class="top-nav__item"><a href="destinations.html" class="top-nav__item-title">Acapulco</a></li>
+                <li class="top-nav__item"><a href="destinations.html" class="top-nav__item-title">Cancun</a></li>
+                <li class="top-nav__item"><a href="destinations.html" class="top-nav__item-title">Cozumel</a></li>
+                <li class="top-nav__item"><a href="destinations.html" class="top-nav__item-title">Huatulco</a></li>
+                <li class="top-nav__item"><a href="destinations.html" class="top-nav__item-title">Ixtapa</a></li>
+                <li class="top-nav__item"><a href="destinations.html" class="top-nav__item-title">Los Cabos</a></li>
+                <li class="top-nav__item"><a href="destinations.html" class="top-nav__item-title">Puerto Vallarta</a></li>
+                <li class="top-nav__item"><a href="destinations.html" class="top-nav__item-title">Riviera Maya</a></li>
+              </ul>
+            </li>
+            <li class="top-nav__item"><a href="./destinations.html" class="top-nav__item-title top-nav__item-title--submenu js-submenu-trigger">Dominican</a>
+              <ul class="top-nav top-nav__submenu top-nav--third-level">
+                <li class="top-nav__item"><a href="destinations.html" class="top-nav__item-title">La Romana</a></li>
+                <li class="top-nav__item"><a href="destinations.html" class="top-nav__item-title">Punta Cana</a></li>
+              </ul>
+            </li>
+            <li class="top-nav__item"><a href="./destinations.html" class="top-nav__item-title top-nav__item-title--submenu js-submenu-trigger">Jamaica</a>
+              <ul class="top-nav top-nav__submenu top-nav--third-level">
+                <li class="top-nav__item"><a href="destinations.html" class="top-nav__item-title">Lucea</a></li>
+                <li class="top-nav__item"><a href="destinations.html" class="top-nav__item-title">Montego Bay</a></li>
+                <li class="top-nav__item"><a href="destinations.html" class="top-nav__item-title">Negril</a></li>
+                <li class="top-nav__item"><a href="destinations.html" class="top-nav__item-title">Ocho Rios</a></li>
+                <li class="top-nav__item"><a href="destinations.html" class="top-nav__item-title">Runaway Bay</a></li>
+                <li class="top-nav__item"><a href="destinations.html" class="top-nav__item-title">Trelawny</a></li>
+              </ul>
+            </li>
+            <li class="top-nav__item"><a href="./destinations.html" class="top-nav__item-title top-nav__item-title--submenu js-submenu-trigger">Costa Rica</a>
+              <ul class="top-nav top-nav__submenu top-nav--third-level">
+                <li class="top-nav__item"><a href="destinations.html" class="top-nav__item-title">Guanacaste</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="top-nav__item"><a href="./tours_and_activities.html" class="top-nav__item-title">Tours &amp; Activities</a></li>
+        <li class="top-nav__item"><a href="./car-rental.html" class="top-nav__item-title">Car Rental</a></li>
+        <li class="top-nav__item"><a href="./about_us.html" class="top-nav__item-title">About Us</a></li>
+        <li class="top-nav__item"><a href="./contact_us.html" class="top-nav__item-title">Contact Us</a></li>
+      </ul>
+    </nav>-------->
+    <div class="ta-page-main">
+        <div class="transfers-landing-imgback ta-dashboard-imgback">
+      <div class="ta-top-back">   
+      <div class="ta-top-section"><a href="./index.html" class="ta-logo-wrapper"><img src="./img/logo.png" alt="Amstar dmc homepage" class="site-logo"></a>
+        <div class="ta-client">
+          <div class="ta-client__portrait"><img class="profile" src="./img/david-gandy.jpg" alt=""></div>
+          <div class="ta-client__welcome">Welcome, 
+            <div class="ta-client__name">David Gandy</div>
+          </div>
+          <div class="ta-client__hotline">Travel Agent Hotline <a href="tel:8773294461" class="ta-client__hotline-number">1 (877) 329 4461</a></div>
         </div>
-        
+        <h1 class="ta-heading"><span class="ta-client-number">Client No. 22113</span>Travel Agents Hub</h1>
       </div>
-          <div class="jqueryui-tabs">
-              <div class="detail-tabs-titles">
-              <ul class="details-tabs-nav">
-                <li class="tab-title ui-state-active"><a href="#tours-d1">Tours Details</a></li>
-                <li class="tab-title"><a href="#tours-d2">Tour Options</a></li>
-                <li class="tab-title"><a href="#tours-d3">Reviews</a></li>
-                <li class="tab-title"><a href="#tours-d4">Practical Info</a></li>
-                <!--<li class="tab-title"><a href="#tours-d5">Calendar</a></li>-->
-                </ul>
-              </div>
-              <div id="tours-d1" class="page-block page-tour-content">
-                <div class="tour-price">
-                  <div class="tour-price__start"><span class="details-from">From:</span> <br> <span class="detailprice">$123</span> <span class="detail-usd">USD</span></div>
-                </div>
-                <div class="activities-type">
-                  <div class="icon-activities"><div class="icon-big-wave"></div></div>
-                  <div class="activities-type-title">Water Activities</div>
-                </div>
-                <div class="tour-details">
-                  <ul class="week-days">
-                    <li class="available">Sun</li>
-                    <li class="unavailable">Mon</li>
-                    <li class="available">Tue</li>
-                    <li class="available">Wed</li>
-                    <li class="available">Thu</li>
-                    <li class="available">Fri</li>
-                    <li class="available">Sat</li>
-                  </ul>
-                  <div class="tour-price__criteria"> 
-                    <div class="tour-price__criteria-item"><span class="tour-price__criteria-label">Adults: </span><span class="tour-price__criteria-content">Over 1.4 m  </span></div>
-                    <div class="tour-price__criteria-item"> <span class="tour-price__criteria-label">Children: </span><span class="tour-price__criteria-content">5 to 11 years old (1 to 1.4 m)</span></div>
-                  </div>
-                  <div class="tour-provider">Provider: 
-                    <span class="tour-price__criteria-content">Experiencias Xcaret</span>
-                  </div>
-                  <h2 class="page-subheading">Tour name</h2>
-                </div>
-                <div class="tour-detail-content">
-                    <div class="page-short-description">Visit one of the New Seven Wonders of the World with Amstar and experience the best Chichen Itza tour in Cancun and the Riviera Maya!</div>
-                    <p>Fly over unspoiled Mayan jungle on zip lines and enjoy magnificent views, swim in underground rivers, ride an amphibious vehicle and raft through mystical underground waters. Experience Xplor the newest, hottest, coolest adventure park!</p>
-                    <div class="page-subheading-subtitle">Enjoy the adventure!</div>
-                    <p>Xplor adventure park in Riviera Maya is a unique underground world with thrilling circuits that invite you to rediscover your senses and emotions within nature. Enjoy the adventure while being guided from take off to landing. Fly over the jungle on zip lines with awesome views and refreshing water landings. Later, take on a challenge crossing hanging bridges and exploring 3.11 miles of fascinating jungle pathways on amphibious vehicles.</p>
-                    <hr>
-                    <div class="page-subheading-title">What&#39;s included</div>
-                    <ul>
-                      <li>English speaking guides</li>
-                      <li>Round trip</li>
-                      <li>Air conditioned transportation (optional)</li>
-                      <li>Entrance fees</li>
-                      <li>Zip-lining gear</li>
-                      <li>Snorkeling equipment</li>
-                      <li>Amphibious vehicles</li>
-                      <li>Lockers, showers, towels</li>
-                      <li>Lunch buffet &amp; drinks</li>
-                    </ul>
-                </div>
-                <hr>
-                <div class="know-container">
-                  <div class="page-subheading-title">What you need to know</div>
-                  <div class="know-column">
-                    <ul>
-                      <li>
-                        <div class="item-know-icon"><div class="icon-internet"></div></div>
-                        <div class="known-detail"><span class="tour-know__criteria-label">Language:</span> English</div>
-                      </li>
-                      <li>
-                        <div class="item-know-icon"><div class="icon-calendar-check"></div></div> 
-                        <div class="known-detail"><span class="tour-know__criteria-label">Season:</span> All Year Round</div>
-                      </li>
-                      <li>
-                        <div class="item-know-icon"><div class="icon-time"></div></div>
-                        <div class="known-detail"><span class="tour-know__criteria-label">Start Time:</span> 11:00 a.m.</div>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="know-column">
-                    <ul>
-                      <li>
-                        <div class="item-know-icon"><div class="icon-hourglass-2"></div></div>
-                        <div class="known-detail"><span class="tour-know__criteria-label">Duration:</span> 7 to 10 hrs. a.m.</div>
-                      </li>
-                      <li>
-                        <div class="item-know-icon"><div class="icon-route"></div></div>
-                        <div class="known-detail"><span class="tour-know__criteria-label">Includes Transport:</span> Yes</div>
-                      </li>
-                      <li>
-                        <div class="item-know-icon"><div class="icon-like-1"></div></div>
-                        <div class="known-detail"><span class="tour-know__criteria-label">Good Physical condition required:</span>  No</div>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="know-column">
-                    <ul>
-                      <li>
-                        <div class="item-know-icon"><div class="icon-old-man"></div></div>
-                        <div class="known-detail"><span class="tour-know__criteria-label">Suitable for the elderly:</span> Yes</div>
-                      </li>
-                      <li>
-                        <div class="item-know-icon"><div class="icon-smiling-baby"></div></div>
-                        <div class="known-detail"><span class="tour-know__criteria-label">Suitable for the children:</span> Yes</div>
-                      </li>
-                      <li>
-                        <div class="item-know-icon"><div class="icon-pregnancy-with-hearts"></div></div>
-                        <div class="known-detail"><span class="tour-know__criteria-label">Pregnant women allowed:</span> Yes</div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div id="tours-d2" class="page-block page-tour-content">
-                <h2 class="page-subheading">Tour options</h2>
-                <hr>
-              </div>
-              <div id="tours-d3" class="page-block page-tour-content">
-                <h2 class="page-subheading">Reviews</h2>
-                <hr>
-              </div>
-              <div id="tours-d4" class="page-block page-tour-content">
-               <h2 class="page-subheading">Practical Info</h2>
-                <hr>
-              </div>
-              <!--<div id="tours-d5" class="page-block page-tour-content">
-                <h2 class="page-subheading">Calendar</h2>
-                 <hr>
-              </div>-->
-          </div>
-          <!--<div class="page-block">
-            <h2 class="page-subheading">Video</h2>
-            <div class="tour-video">
-              <div class="embed-responsive embed-responsive-16by9">
-                <iframe src="https://www.youtube.com/embed/lL-WvXAOUhE" allowfullscreen class="embed-responsive-item"></iframe>
-              </div>
-            </div>
-          </div>
-          <div class="page-block">
-            <h3 class="block-heading">Top Three Tours in Cancun</h3>
-            <div class="link-blocks"><a href="./tour-details.html" class="link-block">
-                <div style="background-image: url('./img/content/about.jpg')" class="link-block__embed link-block__embed--bordered">
-                  <div class="link-block__number">1</div>
-                  <div class="link-block__main">Swim with dolphins</div>
-                </div></a><a href="./tour-details.html" class="link-block">
-                <div style="background-image: url('./img/content/about2.jpg')" class="link-block__embed link-block__embed--bordered">
-                  <div class="link-block__number">2</div>
-                  <div class="link-block__main">ATV Adventure</div>
-                </div></a><a href="./tour-details.html" class="link-block">
-                <div style="background-image: url('./img/content/about3.jpg')" class="link-block__embed link-block__embed--bordered">
-                  <div class="link-block__number">3</div>
-                  <div class="link-block__main">Safari jungle tour</div>
-                </div></a></div>
-          </div>
-          <div class="page-block">
-            <h3 class="block-heading">Recent Comments</h3>
-            <blockquote>“The most amazing experience, excellent attention and pure adrenaline running. Thanks for all the quality time!”
-              <cite>-Mary &amp; Tom Hanks</cite>
-            </blockquote>
-            <blockquote>“I like the nature, incredible escenarios, very recomendable!”
-              <cite>-Antonela &amp; Marcelo Pagani</cite>
-            </blockquote>
-            <blockquote>“The most amazing experience, excellent attention and pure adrenaline running. Thanks for all the quality time!”
-              <cite>-Mary &amp; Tom Hanks</cite>
-            </blockquote>
-          </div>-->
+      </div> 
+
+
+      <div class="ta-main-container">
+      <div class="ta-main-nav">
+        <div class="ta-nav-swiper swiper-container js-ta-nav">
+          <ul class="ta-nav swiper-wrapper">
+            <li class="ta-nav__item swiper-slide"><a href="./ta-dashboard.html" class="ta-nav-tile ta-nav-tile--book"><span class="icon-tickets"> </span>
+                <div class="ta-nav-tile__title ">Book Now</div></a>
+            </li>
+            <li class="ta-nav__item swiper-slide"><a href="./ta-news.html" class="ta-nav-tile ta-nav-tile--reports"><span class="icon-file-1"></span>
+                <div class="ta-nav-tile__title">Reports</div></a>
+            </li>
+            <li class="ta-nav__item swiper-slide"><a href="./ta-sales.html" class="ta-nav-tile ta-nav-tile--cc"><span class="icon-folder-19"> </span>
+                <div class="ta-nav-tile__title">Collateral Corner</div></a>
+            </li>
+            <li class="ta-nav__item swiper-slide"><a href="./ta-brand-guidelines.html" class="ta-nav-tile ta-nav-tile--profile"><span class="icon-id-card-5"> </span>
+                <div class="ta-nav-tile__title">Profile</div></a>
+            </li>
+            <li class="ta-nav__item swiper-slide"><a href="./ta-contact.html" class="ta-nav-tile ta-nav-tile--cpr"><span class="icon-wallet"> </span>
+                <div class="ta-nav-tile__title_small">Comission Payment Registration</div></a>
+            </li>
+            <li class="ta-nav__item swiper-slide"><a href="#" class="ta-nav-tile ta-nav-tile--ma"><span class="icon-user-6"> </span>
+                <div class="ta-nav-tile__title">Manage Agents</div></a></li>
+            <li class="ta-nav__item swiper-slide"><a href="./ta-settings.html" class="ta-nav-tile ta-nav-tile--faqs"><span class="icon-list2"> </span>
+                <div class="ta-nav-tile__title">Faq's</div></a>
+            </li>
+           
+          </ul>
         </div>
-        <div class="flex-col flex-col-1-3 tour-aside">
-          <div class="tour-availability__header">Price and Availability</div>
-          <div class="tour-availability">
-            <form action="./checkout.html"></form>
-            <div class="form-field">
-              <label>Select Date from Calendar
-                <input type="text" class="form-control form-control--searchbox datepicker-control js-datepicker--extended">
-              </label><span title="Help text should be here" class="form-tooltip form-tooltip--extend jqueryui-tooltip"><div class="tour-details-moreinfo icon-info"></div></span>
+      </div>
+      </div>
+
+      <div class="ta-main">
+        <div class="ta-main-header">
+          <!--<ul class="ta-hub-nav">
+         <li class="ta-nav__item swiper-slide"><a href="./ta-settings.html" class="ta-nav-tile ta-nav-tile--"><span class="icon-list2"> </span>
+                <div class="ta-nav-tile__title">Faq's</div></a>
+            </li>
+          </ul>-->
+          <div class="ta-title-block">
+            <div class="ta-thumb-wrapper">
+              <div class="ta-tile-icon ta-tile-icon--thumb ta-tile-icon--dashboard ta-tile-icon ta-nav-tile--ma"><span class="icon-user-6"></span></div>
             </div>
-             <div class="form-field">
-              <label>Select the start time:
-                <input type="text" class="form-control form-control--searchbox datepicker-control js-datepicker--extended">
-              </label><span title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." class="form-tooltip form-tooltip--extend jqueryui-tooltip"><div class="tour-details-moreinfo icon-info"></div></span>
-            </div>
-            <div class="form-field">
-              <label>Select hotel &amp;/or pick up location &amp; time:
-                <select name="tour-select" class="form-control form-control--searchbox jqueryui-selectmenu">
-                  <option value="0">Please choose one</option>
-                  <option value="1">Option One</option>
-                  <option value="2">Option Two</option>
-                  <option value="3">Option Three</option>
-                </select><span title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." class="form-tooltip form-tooltip--extend jqueryui-tooltip"><div class="tour-details-moreinfo icon-info"></div></span>
-              </label>
-            </div>
-            <hr>
-            <div class="tour-availability__note">Select the Tour type option: </div>
-            <div class="tour-availability-type">
-              <form>
-                <input type="checkbox" name="option 1">  Xplor Entrance Only<br>
-                <input type="checkbox" name="oprion 2">  Xplor Deluxe
-              </form>
-            </div>
-            <div class="tour-availability__note">Select the # of pax for each option: </div>
-            <div class="tour-availability__title">Xplor Entrance Only</div>
-            <div class="form-group-flex-all">
-              <label class="form-field"><div class="form-client">Adult <span title="Over 12 years old" class="form-tooltip jqueryui-tooltip form-client-info"><div class="tour-details-moreinfo icon-info"></div></span></div><span class="tour-availability__prices">$104.00</span>
-                <select id="sb-adult" name="sb-adult" class="form-control form-control--searchbox jqueryui-selectmenu">
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                </select>
-              </label>
-              <label class="form-field"><div class="form-client">Children <span title="6 to 12 years old" class="form-tooltip jqueryui-tooltip form-client-info"><div class="tour-details-moreinfo icon-info"></div></span></div> <span class="tour-availability__prices">$52.00</span>
-                <select id="sb-child" name="sb-child" class="form-control form-control--searchbox jqueryui-selectmenu">
-                  <option value="0">0</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                </select>
-              </label>
-              <label class="form-field"> <div class="form-client">Infant <span title="1 to 5 years old" class="form-tooltip jqueryui-tooltip form-client-info"><div class="tour-details-moreinfo icon-info"></div></span></div> <span class="tour-availability__prices">$45.00</span>
-                <select id="sb-infant" name="sb-infant" class="form-control form-control--searchbox jqueryui-selectmenu">
-                  <option value="0">0</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                </select>
-              </label>
-            </div>
-            <hr>
-            <div class="tour-availability__supplements"> <span class="tour-availability__supplements-label">Add supplements: </span> <br>Protection Plus</div>
-            <label class="form-field form-field-1-3"><span class="tour-availability__prices">$99.00</span>
-              <select id="sb-infant" name="sb-infant" class="form-control form-control--searchbox jqueryui-selectmenu">
-                <option value="0">0 supplements</option>
-                <option value="1">1 passenger</option>
-                <option value="2">2 passengers</option>
-                <option value="3">3 passengers</option>
-              </select>
-            </label>
-            <hr>
-            <div class="tour-availability__total"> 
-              <div class="tour-availability__total-label">Total Amount: </div><span class="tour-uds__total-label">USD</span>$218.00 
-              <div class="tour-availability__note">All taxes included</div>
-            </div>
-            <div class="form-group-flex form-group-flex--between">
-              <!--<button type="button" class="btn btn-gray btn-small">Add to Cart</button>-->
-              <button type="submit" class="btn btn-notice btn-booking">Book Now</button>
+            <h2 class="ta-title">Manage Agents</h2>
+            <p class="ta-description">Review by months your sales stats</p>
+          </div>
+        </div>
+        <div class="ta-flex-row">
+          <div class="ta-col-aside dashboard-content">
+            <div class="ta-menu-aside">
+              <a href="#"><div class="ta-menu-aside-item ta-menu-aside-item-active">List agents</div></a>
+              <a href="ta-addagent.html"><div class="ta-menu-aside-item">Add Agent</div></a>
             </div>
           </div>
-          <!--<h3 class="aside-heading">Includes</h3>
-          <div class="aside-section">
-            <ul class="nude-list"> 
-              <li>English speaking guides  </li>
-              <li>Round trip</li>
-              <li>Air conditioned transportation (optional)</li>
-              <li>Entrance fees</li>
-              <li>Zip-lining gear</li>
-              <li>Snorkeling equipment</li>
-              <li>Amphibious vehicles</li>
-              <li>Lockers, showers, towels</li>
-              <li>Lunch buffet &amp; drinks</li>
-            </ul>
-          </div>
-          <h3 class="aside-heading">Tour Options</h3>
-          <div class="aside-section">
-            <ul class="nude-list">
-              <li>Entrance Only option is also available.</li>
-              <li>Transportation is not included.</li>
-            </ul>
-          </div>
-          <h3 class="aside-heading">Important</h3>
-          <div class="aside-section">
-            <p>Wear swimsuit under comfortable clothing. Bring water shoes or sport sandals, biodegradable sunblock, hat, sunglasses and money for tips & souvenirs. (Tipping is optional)</p>
-            <p>Please note: If you are staying in Cozumel you will need to arrive to Playa del Carmen on your own via Ferry and meet at pick up location.</p>
-            <p>Pick up and drop off times will vary according to Hotel location.   </p>
-          </div>
-          <h3 class="aside-heading">Experiences</h3>
-          <div class="aside-section">
-            <p>Write a comment for this tour.</p>
-          </div>
-          <form action="#">
-            <div class="form-field">
-              <input type="text" placeholder="Your Name(s) here" class="comment-control">
+          <div class="ta-col-main ta-col-main--dashboard">
+          <h1>List Agents</h1>
+            <div class="table-scroll">
+              <table class="dashboard-table responsive-table">
+                <thead>
+                  <tr>
+                    <th>Agent Name</th>
+                    <th>Status</th>
+                    <th>Group</th>
+                    <th>Email</th>
+                    <th>Last Login</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-th="Agent name">David Gandy</td>
+                    <td data-th="Status"><span class="ta-status-table-on">ON</span></td>
+                    <td data-th="Group">Default</td>
+                    <td data-th="Email">davidg@yahoo.com</td>
+                    <td data-th="Last Login">Oct 4, 2016 11:02 AM</td>
+                  </tr>
+                  <tr>
+                    <td data-th="Agent Name">John Doe</td>
+                    <td data-th="Status"><span class="ta-status-table-off">OFF</span></td>
+                    <td data-th="Group">Confirmed</td>
+                    <td data-th="Email">john@yahoo.com</td>
+                    <td data-th="Last Login">Oct 4, 2016 11:02 AM</td>
+                  </tr>
+                   <tr>
+                    <td data-th="Agent name">David Gandy</td>
+                    <td data-th="Status"><span class="ta-status-table-on">ON</span></td>
+                    <td data-th="Group">Default</td>
+                    <td data-th="Email">davidg@yahoo.com</td>
+                    <td data-th="Last Login">Oct 4, 2016 11:02 AM</td>
+                  </tr>
+                  <tr>
+                    <td data-th="Agent Name">John Doe</td>
+                    <td data-th="Status"><span class="ta-status-table-off">OFF</span></td>
+                    <td data-th="Group">Confirmed</td>
+                    <td data-th="Email">john@yahoo.com</td>
+                    <td data-th="Last Login">Oct 4, 2016 11:02 AM</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-            <div class="form-field">
-              <textarea placeholder="Your comments here" class="comment-control"></textarea>
+            <div class="report-footer">
+            <div class="ta-btn-container"><button class="btn btn-notice ta-btn">Add Agent</button></div>
+              <div class="report-controls">
+                <form action="#">
+                  <div class="ta-form-field ta-form-field--selectmenu form-field-inline-flex">
+                    <label for="report-rows">Show rows</label>
+                    <select id="report-rows" class="ta-form-control ta-form-control--report jqueryui-selectmenu">
+                      <option value="2">2</option>
+                      <option value="10" selected>10</option>
+                      <option value="20">20</option>
+                      <option value="50">50</option>
+                      <option value="100">100</option>
+                      <option value="200">200</option>
+                      <option value="10000000">all</option>
+                    </select>
+                  </div>
+                  <div class="ta-form-field ta-form-field--selectmenu form-field-inline-flex"> 
+                    <label for="report-goto">Go to</label>
+                    <select id="report-goto" class="ta-form-control ta-form-control--report jqueryui-selectmenu">
+                      <option value="1" selected>1</option>
+                      <option value="1">2 </option>
+                      <option value="1">3</option>
+                      <option value="1">4</option>
+                      <option value="1">5</option>
+                      <option value="1">6</option>
+                      <option value="1">7</option>
+                      <option value="1">8</option>
+                      <option value="1">9</option>
+                      <option value="1">10</option>
+                    </select>
+                  </div><span class="report-pages">1-10 of 105</span><span class="report-actions">
+                    <button type="button" class="btn btn-report"><span class="icon-back"></span></button>
+                    <button type="button" class="btn btn-report"><span class="icon-next"></span></button></span>
+                </form>
+              </div>
             </div>
-            <div class="form-field form-field--right">
-              <input type="submit" value="Submit" class="btn btn-gray btn-comment">
-            </div>
-          </form>-->
+          </div>
         </div>
       </div>
     </div>
@@ -657,9 +536,11 @@
             <div class="form-field--center">
               <button type="submit" class="btn btn-large btn-notice">Create Business Account</button>
             </div>
-          </div>
+        
         </div>
-      </form>
+      </div>
+    </div>
+    </form>
     </div>
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
@@ -667,5 +548,11 @@
     <script src="js/vendor/swiper.jquery.min.js"></script>
     <script src="js/vendor/jquery.timepicker.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/vendor/jquery.flot.js"></script>
+    <script>
+      var d1 = [[0, 3], [4, 8], [8, 5], [9, 13]];
+      
+      $.plot("#flot-placeholder", [ d1 ]);
+    </script>
   </body>
 </html>
