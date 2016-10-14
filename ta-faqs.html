@@ -127,7 +127,7 @@
             </li>
             <li class="ta-nav__item swiper-slide"><a href="ta-listagents.html" class="ta-nav-tile ta-nav-tile--ma"><span class="icon-user-6"> </span>
                 <div class="ta-nav-tile__title">Manage Agents</div></a></li>
-            <li class="ta-nav__item swiper-slide"><a href="./ta-faqs.html" class="ta-nav-tile ta-nav-tile--faqs"><span class="icon-list2"> </span>
+            <li class="ta-nav__item swiper-slide"><a href="#" class="ta-nav-tile ta-nav-tile--faqs"><span class="icon-list2"> </span>
                 <div class="ta-nav-tile__title">Faq's</div></a>
             </li>
            
@@ -145,73 +145,66 @@
           </ul>-->
           <div class="ta-title-block">
             <div class="ta-thumb-wrapper">
-              <div class="ta-tile-icon ta-tile-icon--thumb ta-tile-icon--dashboard ta-tile-icon ta-nav-tile--profile"><span class="icon-id-card-5"></span></div>
+              <div class="ta-tile-icon ta-tile-icon--thumb ta-tile-icon--dashboard ta-tile-icon ta-nav-tile--faqs"><span class="icon-list2"></span></div>
             </div>
-            <h2 class="ta-title">Profile</h2>
+            <h2 class="ta-title">Faq's</h2>
             <p class="ta-description">Review by months your sales stats</p>
           </div>
         </div>
         <div class="ta-flex-row">
-          <div class="ta-col-aside dashboard-content">
-            <div class="ta-menu-aside">
-              <a href="#"><div class="ta-menu-aside-item ta-menu-aside-item-active">My Profile</div></a>
-              <a href="ta-company.html"><div class="ta-menu-aside-item">Company Profile</div></a>
-              <a href="ta-bank.html"><div class="ta-menu-aside-item">Bank Details</div></a>
+          
+          <div class="ta-col-main ta-col-main--dashboard ta-faqs"> 
+            
+          <div id="accordion">
+            <h3>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam?</h3>
+            <div>
+              <p>
+              Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+              ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+              amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+              odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+              </p>
+            </div>
+            <h3>Mauris mauris ante, blandit et, ultrices a?</h3>
+            <div>
+              <p>
+              Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+              purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+              velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+              suscipit faucibus urna.
+              </p>
+            </div>
+            <h3>Nam enim risus, molestie et, porta ac, aliquam ac, risus?</h3>
+            <div>
+              <p>
+              Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+              Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+              ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+              lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+              </p>
+              <ul>
+                <li>List item one</li>
+                <li>List item two</li>
+                <li>List item three</li>
+              </ul>
+            </div>
+            <h3>Integer dignissim consequat lectus?</h3>
+            <div>
+              <p>
+              Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+              et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+              faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+              mauris vel est.
+              </p>
+              <p>
+              Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+              Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+              inceptos himenaeos.
+              </p>
             </div>
           </div>
-          <div class="ta-col-main ta-col-main--dashboard">
-          <h1>My Profile</h1>
-            <div class="">
-            <form action="#">
-              <div class="settings-form-flex">
-                <div class="settings-form-group">
-                  <label class="ta-form-field">
-                    <input type="text" placeholder="Title*" class="ta-form-control">
-                  </label>
-                  <label class="ta-form-field">
-                    <input  type="text" placeholder="First name*" class="ta-form-control">
-                  </label>
-                  <label class="ta-form-field">
-                    <input type="text" placeholder="Last name*" class="ta-form-control">
-                  </label>
-                  <label class="ta-form-field">
-                    <input  type="text" placeholder="Email*" class="ta-form-control">
-                  </label>
-                  <label class="ta-form-field">
-                    <input type="text" placeholder="Retype Email*" class="ta-form-control">
-                  </label>
-                  <label class="ta-form-field">
-                    <input  type="text" placeholder="Password*" class="ta-form-control">
-                  </label>
-                  <label class="ta-form-field">
-                    <input type="text" placeholder="Retype Password*" class="ta-form-control">
-                  </label>
-                </div>
-                <div class="settings-form-group">
-                  <div class="ta-form-field"> 
-                    <div class="ta-profile-pictures swiper-container">
-                      <div class="swiper-wrapper">
-                        <div class="ta-profile-picture swiper-slide"><img src="./img/ta/profile-picture.jpg" alt="Profile Picture">
-                          <button type="button" class="btn btn-del-profile-picture">X</button>
-                        </div>
-                        <div class="ta-profile-picture swiper-slide ta-profile-picture--add">
-                          <label class="add-profile-picture">
-                          <div class="icon-add-profile"><i class="icon-add-2"></i></div>
-                            <div class="add-profile-picture__content">Browse</div>
-                            <input type="file">
-                          </label>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="ta-checkbox-agree"><input type="checkbox" name="terms" value=""> Please send me promotional information and newsletters</div>
-              <div class="ta-form-field ta-form-field--controls">
-              <button type="submit" class="btn btn-notice ">Send Mail</button>
-              </div>
-            </form>
-          </div>
+
+
           </div>
         </div>
       </div>
