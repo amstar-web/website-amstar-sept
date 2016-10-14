@@ -27,6 +27,27 @@ $(function() {
     slidesPerView: 'auto'
   });
 
+  var swiperTranfers = new Swiper('.swiper-transfers', {
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        slidesPerView: 1,
+        paginationClickable: true,
+        spaceBetween: 30,
+        loop: true
+  });
+
+    var swiperBanners = new Swiper('.swiper-banners', {
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        slidesPerView: 1,
+        paginationClickable: true,
+        spaceBetween: 30,
+        loop: true
+  });
+
+
   var newsTemplatesSwiper = new Swiper('.js-ta-news-templates-swiper', {
     slidesPerView: 2,
     slidesPerGroup: 2,
@@ -42,6 +63,36 @@ $(function() {
   $('.jqueryui-news-post-tabs').tabs({
     active: 1
   });
+  
+   // Close
+$(document).on('click', function(event) {
+ if ($(event.target).has('.close').length) {
+    $(".ta-button").hide();
+  }
+});
+
+ $(document).on('ready', function() {
+      $(".regular").slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3
+      });
+      $(".center").slick({
+        dots: true,
+        infinite: true,
+        centerMode: true,
+        slidesToShow: 3,
+        slidesToScroll: 3
+      });
+      $(".variable").slick({
+        dots: true,
+        infinite: true,
+        variableWidth: true
+      });
+    });
+
+
 
   // Init FAQs Accordion
   function initFAQsAccordion() {
