@@ -8,12 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="./img/favicon.png">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/animate.min.css">
-        
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header home-page  "> 
+    <header class="page-header home-page">
     <div class="top-logom">
       <div class="page-header__row page-header__row--logo">
         <a href="./index.html" class="site-logo-wrapper logo-desktop"><img src="./img/logo-white.png" alt="Amstar dmc homepage" class="site-logo"></a>
@@ -45,13 +43,13 @@
                     <div class="btn-top"><button id="register-dialog-trigger" type="button" data-id="register-dialog" class="user-action btn js-dialog-button">Register</button></div>
                   </div>
                 </li>
-                <!--<li class="user-action-item">
+                <li class="user-action-item">
                   <div class="menu-icon-item">
                     <div class="menu-icon"><div class="icon-social"></div></div>
                     <div class="btn-top"><button id="register-dialog-trigger" type="button" data-id="register-dialog" class="user-action btn js-dialog-button">Live Chat</button></div>
                   </div>
                 </li>
-                <li class="user-action-item">
+                <!--<li class="user-action-item">
                 <div class="menu-icon-item">
                   <div class="menu-icon"><div class="icon-login"></div></div>
                   <div class="btn-top"><button id="travel-agent-dialog-trigger" type="button" data-id="travel-agent-dialog" class="user-action btn js-dialog-button user-action">Travel Agents</button></div>
@@ -87,7 +85,7 @@
           <button id="menu-trigger" type="button" class="menu-trigger"><span class="menu-trigger__bar"></span></button>
       <ul id="top-nav" class="top-nav top-nav--first-level">
         <li class="top-nav__item current"><a href="./index.html" class="top-nav__item-title">Home</a></li>
-        <li class="top-nav__item"><a href="./transfers-landing.html" class="top-nav__item-title">Airport Transfers</a></li>
+        <li class="top-nav__item"><a href="./airport_transfers.html" class="top-nav__item-title">Airport Transfers</a></li>
         <li class="top-nav__item"><a href="./tours_and_activities.html" class="top-nav__item-title">Tours &amp; Activities</a></li>
          <li class="top-nav__item"><a href="./car-rental.html" class="top-nav__item-title">Car Rental</a></li>
         <li class="top-nav__item"> <span class="top-nav__item-title top-nav__item-title--submenu js-submenu-trigger">Destinations</span>
@@ -131,11 +129,8 @@
         <li class="top-nav__item"><a href="./about_us.html" class="top-nav__item-title">About</a></li>
         <!--<li class="top-nav__item"><a href="./contact_us.html" class="top-nav__item-title">Contact Us</a></li>-->
       </ul>
-
-
-    </nav>   
+    </nav>
     </header>
-
     
     <div class="top-content">
       <div class="home-page top-swiper swiper-container js-swiper">
@@ -144,36 +139,17 @@
         </div>
 
         <div class="swiper-wrapper">
-          <div style="" class="swiper-slide top-swiper-slide blur">
-         
-              <div class="hero_area">
-    <video id="sensi-video" loop="loop" preload="auto" class="video-playing" autoplay="autoplay">
-      <source type="video/webm" src="img/588754553.webm"></source>
-      <source type="video/mp4" src="img/588754553.mp4"></source>
-          <img src="img/588754553.jpg">
-    </video>
-    <div class="header-color">
-           <div class="caption">
-              <h1 class="animated fadeInLeftBig">Exceptional Travel Experiences</h1> <!-- AHC:Sólo debe existir un H1 por página -->
-              <h2 class="animated fadeInRightBig">Book now your tranfers, excursion & car rental</h2>
-            </div>
-  </div></div></div>
-          <!--- <div class="promotion-block-wrapper">
+          <div style="background-image: url(./img/swiper/banner-home.jpg);" class="swiper-slide top-swiper-slide">
+            <!--<div class="promotion-block-wrapper">
               <div class="promotion-block">
                 <div class="promotion-block__text"><span style="font-size: 23px; font-style: italic;">Riviera Maya</span><br><span style="font-size: 30px;">Chichen Plus </span><br><span style="font-size: 20px;">from $<span style="font-size: 40px; vertical-align: text-top; line-height: 1;">59</span> USD</span></div>
                 <div class="promotion-block__action"><a href="./offers-and-discounts.html" class="btn btn-notice">Book Now</a></div>
               </div>
             </div>-->
-       
-
             <div class="home-border-container"><div class="icon-top"></div></div>
-
           </div>
-
         </div>
       </div>
-
-
       <div class="searchbox-section">
       <!--<div class="swiper-cont">
            <div class="swiper-content">Inspiring travel experiences </div>
@@ -183,12 +159,10 @@
           <ul class="searchbox-tabs-nav">
             <li class="searchbox-tabs-nav__item ui-tabs-active"><a href="#tabs-transfers" class="searchbox-tabs-nav__item-title">Transfers</a></li>
             <li class="searchbox-tabs-nav__item"><a href="#tabs-tours" class="searchbox-tabs-nav__item-title">Tours</a></li>
-                <li class="searchbox-tabs-nav__item"><a href="#tabs-carrental" class="searchbox-tabs-nav__item-title">Car Rental</a></li>
           </ul>
-          <div class="searchbox-tabs search-airport-tranfers">
+          <div class="searchbox-tabs">
             <div id="tabs-transfers" class="searchbox-tab">
               <form action="./airport_transfers.html">
-               <div class="form-line1">
                 <label class="form-field">Airport
                   <input type="text" placeholder="CUN / Cancun" class="form-control form-control--searchbox">
                 </label>
@@ -199,53 +173,50 @@
                     <option value="3">Option Three</option>
                   </select>
                 </label>
-             
                 <label class="form-field">Hotel
                   <input type="text" placeholder="CUN / Cancun" class="form-control form-control--searchbox">
                 </label>
-          
-                </div>
-
-              
-                    <div class="form-line1">
-                  
-                  <label class="form-small-select">Adult
+                <div class="form-group-flex-all">
+                  <label class="form-field">Adult
                     <select id="sb-adult" name="sb-adult" class="form-control form-control--searchbox jqueryui-selectmenu">
                       <option value="1">1</option>
                       <option value="2">2</option>
                       <option value="3">3</option>
                     </select>
                   </label>
-                  <label class="form-small-select">Child
+                  <label class="form-field">Child
                     <select id="sb-child" name="sb-child" class="form-control form-control--searchbox jqueryui-selectmenu">
                       <option value="1">1</option>
                       <option value="2">2</option>
                       <option value="3">3</option>
                     </select>
                   </label>
-                  <label class="form-small-select">Infant
+                  <label class="form-field">Infant
                     <select id="sb-infant" name="sb-infant" class="form-control form-control--searchbox jqueryui-selectmenu">
                       <option value="1">1</option>
                       <option value="2">2</option>
                       <option value="3">3</option>
                     </select>
                   </label>
-            
-                
-    
+                </div>
+                <div class="form-group-flex-all">
                   <label class="form-field">Arrival
                     <input type="text" class="form-control form-control--searchbox form-control--small datepicker-control js-datepicker">
                   </label>
                   <label class="form-field">Departure
                     <input type="text" class="form-control form-control--searchbox form-control--small datepicker-control js-datepicker">
                   </label>
-                </div></div>
-            
-                     <div class="form-field--center"> 
-                     <div class="btn btn-notice"><span class="icon-search-1 iconbtn"></span>
-                  <a href="#" class="btntextwhite">search</a> </div>
                 </div>
-
+                <div class="form-field--center">
+                  <input type="submit" value="Search" class="btn btn-notice">
+                </div>
+              </form>
+            </div>
+            <div id="tabs-tours" class="searchbox-tab">
+              <form action="./tours_and_activities.html">Tours search box tab
+                <div class="form-field--center">
+                  <input type="submit" value="Search" class="btn btn-notice">
+                </div>
               </form>
             </div>
           </div>
@@ -256,11 +227,10 @@
 
     <div class="page-main home-main">
       <div class="page-section tours-activities-main">
-      <div class="line-title"></div>
         <h1>Why Book with Amstar</h1>
-        <!--<div class="tours-activities-top">
+        <div class="tours-activities-top">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas nunc arcu, quis pellentesque orci laoreet eget. Pellentesque laoreet eget sapien vitae sollicitudin. Vestibulum semper, diam in ultricies pulvinar, justo magna viverra dolor, eget congue turpis mauris ac ligula. Fusce sed nisi dapibus, pulvinar enim id, pulvinar diam. Sed feugiat sapien magna, sed molestie turpis vestibulum a.</p>
-        </div>-->
+        </div>
       </div> 
 
       <div class="page-section">
@@ -297,61 +267,14 @@
           </div>
         </div>
       </div>  
-      <div class="page-section banner-section"><div class="line-title"></div>
-        <h1>Great Title here</h1>
-                  <div class="swiper-container banner-swiper swiper-transfers">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <div style="background-image: url(./img/home-deals-03.jpg);" class="swiper-slide__img"></div>
-               <div class="page-section">
-                      <div class="banners_btn">
-                    <button type="button" class="btn btn-notice btn-center btn-large">Select Now</button> </div>
-                   </div> 
-                      </div>
-                      <div class="swiper-slide">
-                        <div style="background-image: url(./img/content/about2.jpg);" class="swiper-slide__img"></div>
-                         <div class="page-section">
-                      <div class="banners_btn">
-                    <button type="button" class="btn btn-notice btn-center btn-large">Select Now</button> </div>
-                   </div> 
-                      </div>
-                      <div class="swiper-slide">
-                        <div style="background-image: url(./img/home-destination-04.jpg);" class="swiper-slide__img"></div>
-                         <div class="page-section">
-                      <div class="banners_btn">
-                    <button type="button" class="btn btn-notice btn-center btn-large">Select Now</button> </div>
-                   </div> 
-                      </div>
 
-                    </div>
-
-
-                    <div class="swiper-button-next swiper-button-white"></div>
-                    <div class="swiper-button-prev swiper-button-white"></div>
- <div class="swiper-pagination"></div>
-                  </div>
-                     
-
-                  </div>
-  <div class="travelagents-banner">
-  <div class="line-title"></div>
-        <h1>Great Title here</h1>
       <div class="home-travelagent-imgback">
           <div class="tours-activities-color">
-           <div class="page-section">
-              <div class="tours-activities-top">
-                <h1>Travel Agents</h1>
-                   <div class="tours-grid__item-footer">
-                    <button type="button" class="btn btn-notice btn-center btn-large">Affiliate Now</button>
-                   </div>
-                   </div>
-                   </div>
            </div>
       </div>
-      </div>
 
-      <!--<div class="page-section">
-        <div class="tours-activities-main"><h1>Top 6 tours</h1></div>
+      <div class="page-section">
+        <div class="tours-activities-main"><h1>Handpicked Deals</h1></div>
         <div class=" tours-activities-grid tours-activities-combo">
             <div class="form-field tours-activities-form-field">
               <select name="passenger-title" class="form-control jqueryui-selectmenu">
@@ -395,124 +318,118 @@
             <div style="background-image: url(./img/home-deals-05.jpg)" class="home-deals-item-header"></div>
           </div>
         </div>
-      </div>-->
-
-           <div class="page-section">
-        <div class="tours-activities-main"><h1>Top 6 tours</h1></div>
-        <div class=" tours-activities-grid tours-activities-combo">
-            <div class="form-field tours-activities-form-field">
-              <select name="passenger-title" class="form-control jqueryui-selectmenu">
-                <option disabled selected>Cancún</option>
-                <option value="1">Option2</option>
-                <option value="2">Option3</option>
-                <option value="3">Option4</option>
-              </select>
-            </div>
-          <div class="tours-grid__item-footer tours-activities-form-field">
-              <button type="button" class="btn btn-notice">See All</button>
-            </div>
-        </div>
-        <div class="home-icons-section">
-          <div class="home-deals-item">
-            <div style="background-image: url(./img/home-deals-01.jpg)" class="home-deals-item-header">
-            <div class="home-deals-content">
-              <div class="home-deals-container">
-              <div class="home-deal-title">Name</div>
-                <div class="home-deal-promo">Tour name</div>
-                <div class="tours-grid__item-footer">
-                  <button type="button" class="btn btn-center btn-deals">View</button>
-                </div>
-                </div>
-            </div>
-            </div>
-          </div>
-          <div class="home-deals-item">
-            <div style="background-image: url(./img/home-deals-02.jpg)" class="home-deals-item-header"></div>
-          </div>
-          <div class="home-deals-item">
-            <div style="background-image: url(./img/content/about3.jpg)" class="home-deals-item-header"></div>
-          </div>
-          <div class="home-deals-item">
-            <div style="background-image: url(./img/home-deals-03.jpg)" class="home-deals-item-header"></div>
-          </div>
-          <div class="home-deals-item">
-            <div style="background-image: url(./img/home-deals-04.jpg)" class="home-deals-item-header"></div>
-          </div>
-          <div class="home-deals-item">
-            <div style="background-image: url(./img/home-deals-05.jpg)" class="home-deals-item-header"></div>
-          </div>
-        </div>
       </div>
 
-
-<div class="airport-transfers-section">
-        <h2 class="airport-transfers-title">Airport Transfers</h2>
-                  <div class="swiper-container transfers-swiper swiper-transfers">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <div style="background-image: url(./img/home-transfers-01.jpg);" class="swiper-slide__img">
-                         <div class="page-section-slider">
-                          <div class="tours-activities-top">
-                           <h1>Shuttle Tranfers</h1>
-                          <div class="tours-grid__item-footer">
-                         <button type="button" class="btn btn-notice btn-center btn-large">Select Now</button>
-                         </div>
-                        </div>
-                       </div></div></div>
-                      <div class="swiper-slide">
-                        <div style="background-image: url(./img/transfers-landing-02.jpg);" class="swiper-slide__img">
-                            <div class="page-section-slider">
-                          <div class="tours-activities-top">
-                           <h1>Private Tranfers</h1>
-                          <div class="tours-grid__item-footer">
-                         <button type="button" class="btn btn-notice btn-center btn-large">Select Now</button>
-                         </div>
-                        </div>
-                       </div></div></div>
-                      <div class="swiper-slide">
-                        <div style="background-image: url(./img/transfers-landing-03.jpg);" class="swiper-slide__img">
-                            <div class="page-section-slider">
-                          <div class="tours-activities-top">
-                           <h1>Private Delux Tranfers</h1>
-                          <div class="tours-grid__item-footer">
-                         <button type="button" class="btn btn-notice btn-center btn-large">Select Now</button>
-                         </div>
-                        </div>
-                       </div></div></div></div>
-                    <div class="swiper-button-next swiper-button-white"></div>
-                    <div class="swiper-button-prev swiper-button-white"></div>
- <div class="swiper-pagination"></div>
-                  </div>
-                     
-
-                  </div>
-                     <div class="page-section tours-activities-main">
+      <div class="page-section tours-activities-main">
         <h1>Transfers</h1>
         <div class="home-subtitle">
             <p>Lorem ipsum dolor sit amet</p>
         </div>
       </div> 
       <div class="home-transfers-imgback">
-          <div class="transfers-home tranfers-color home-transfers-container">
-               <div class="page-section">
+          <div class="tours-activities-color home-transfers-container">
+              <div class="page-section">
               <div class="tours-activities-top">
-           
+                <h1>Private Delux Tranfers</h1>
                    <div class="tours-grid__item-footer">
                     <button type="button" class="btn btn-notice btn-center btn-large">Select Now</button>
                    </div>
                    </div>
-                   </div>
+             </div>
            </div>
         </div>
 
+        <div class="page-section tours-activities-main">
+          <h1>Type of Transfers</h1>
+          <div class="home-subtitle">
+              <p>Lorem ipsum dolor sit amet</p>
+          </div>
+        <div class="tours-grid tours-activities-all tours-activities-grid ">
+          <div class="tours-grid__item ">
+            <div style="background-image: url(./img/home-transfers-02.jpg)" class="header-transfers-images tours-grid__item-header"></div>
+            <div class="tours-grid__item-description home-transfers-list">
+            <div class="home-transfers-label">Shuttle</div>
+            <ul>
+              <li><div class="home-transfers-item"><div class="home-transfers-icon"><div class="icon-users"></div></div>Lorem ipsum dolor sit amet</div></li>
+              <li><div class="home-transfers-item"><div class="home-transfers-icon"><div class="icon-hotel"></div></div>Lorem ipsum dolor sit amet</div></li>
+              <li><div class="home-transfers-item"><div class="home-transfers-icon"><div class="icon-van"></div></div>Lorem ipsum dolor sit amet</div></li>
+              <li><div class="home-transfers-item"><div class="home-transfers-icon"><div class="icon-suitcase-open"></div></div>Lorem ipsum dolor sit amet</div></li>
+            </ul>
+            </div>
+            <div class="home-transfers-combo">
+                <div class="form-field">
+                  <select name="passenger-title" class=" jqueryui-selectmenu">
+                    <option disabled selected>Cancún</option>
+                    <option value="1">Option2</option>
+                    <option value="2">Option3</option>
+                    <option value="3">Option4</option>
+                  </select>
+                </div>
+            </div>
+            <div class="tours-grid__item-footer">
+              <button type="button" class="btn btn-notice btn-home-transfers">Select Now</button>
+            </div></div>
+              <div class="tours-grid__item ">
+            <div style="background-image: url(./img/home-transfers-03.jpg)" class="header-transfers-images tours-grid__item-header">
+            </div>
+            <div class="tours-grid__item-description home-transfers-list">
+            <div class="home-transfers-label">Private</div>
+            <ul>
+              <li><div class="home-transfers-item"><div class="home-transfers-icon"><div class="icon-users"></div></div>Lorem ipsum dolor sit amet</div></li>
+              <li><div class="home-transfers-item"><div class="home-transfers-icon"><div class="icon-hotel"></div></div>Lorem ipsum dolor sit amet</div></li>
+              <li><div class="home-transfers-item"><div class="home-transfers-icon"><div class="icon-van"></div></div>Lorem ipsum dolor sit amet</div></li>
+              <li><div class="home-transfers-item"><div class="home-transfers-icon"><div class="icon-suitcase-open"></div></div>Lorem ipsum dolor sit amet</div></li>
+            </ul>
+            </div>
+            <div class="home-transfers-combo">
+                <div class="form-field">
+                  <select name="passenger-title" class=" jqueryui-selectmenu">
+                    <option disabled selected>Cancún</option>
+                    <option value="1">Option2</option>
+                    <option value="2">Option3</option>
+                    <option value="3">Option4</option>
+                  </select>
+                </div>
+            </div>
+            <div class="tours-grid__item-footer">
+              <button type="button" class="btn btn-notice btn-home-transfers">Select Now</button>
+            </div>
+            </div>
+            <div class="tours-grid__item">
+            <div style="background-image: url(./img/home-transfers-04.jpg)" class="header-transfers-images tours-grid__item-header">
+            </div>
+            <div class="tours-grid__item-description home-transfers-list">
+            <div class="home-transfers-label">Delux</div>
+            <ul>
+              <li><div class="home-transfers-item"><div class="home-transfers-icon"><div class="icon-users"></div></div>Lorem ipsum dolor sit amet</div></li>
+              <li><div class="home-transfers-item"><div class="home-transfers-icon"><div class="icon-hotel"></div></div>Lorem ipsum dolor sit amet</div></li>
+              <li><div class="home-transfers-item"><div class="home-transfers-icon"><div class="icon-van"></div></div>Lorem ipsum dolor sit amet</div></li>
+              <li><div class="home-transfers-item"><div class="home-transfers-icon"><div class="icon-suitcase-open"></div></div>Lorem ipsum dolor sit amet</div></li>
+            </ul>
+            </div>
+            <div class="home-transfers-combo">
+                <div class="form-field">
+                  <select name="passenger-title" class=" jqueryui-selectmenu">
+                    <option disabled selected>Cancún</option>
+                    <option value="1">Option2</option>
+                    <option value="2">Option3</option>
+                    <option value="3">Option4</option>
+                  </select>
+                </div>
+            </div>
+            <div class="tours-grid__item-footer">
+              <button type="button" class="btn btn-notice btn-home-transfers">Select Now</button>
+            </div></div>
+        </div>
+      </div> 
 
-              <div class="">
+        <div class="">
         <div class="tours-activities-main"><h1>Be inspired</h1>
           <div class="home-subtitle">
               <p>Lorem ipsum dolor sit amet</p>
           </div>
         </div>
-          <div class="home-icons-section home-destinations-section">
+          <div class="home-icons-section">
           <div class="home-deals-item home-destinations-item">
             <div style="background-image: url(./img/home-destination-01.jpg)" class="home-deals-item-header">
             <div class="home-destination-content">
@@ -521,7 +438,7 @@
                 <div class="home-destination-name">
                   Riviera Maya <br> Cancún <br> Cozumel <br> Los Cabos
                 </div>
-                <div class="home-destination-name2">
+                <div class="home-destination-name">
                   Acapulco <br> Huatulco <br> Ixtapa <br> Puerto Vallarta
                 </div>
                 </div>
@@ -993,13 +910,11 @@
         </div>
       </form>
     </div>
-    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
     <script src="js/vendor/jquery-ui.min.js"></script>
     <script src="js/vendor/swiper.jquery.min.js"></script>
     <script src="js/vendor/jquery.timepicker.js"></script>
     <script src="js/main.js"> </script>
-
-        
   </body>
 </html>
