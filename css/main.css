@@ -8307,6 +8307,21 @@ span.detailprice {
     background-size: cover;
     height: 212px;
     /* width: 200px; */
+
+}
+
+.showme{ 
+display: none;
+}
+.shownow:hover .showme{
+display : block;
+}
+.tours-grid__item-car {
+    background-position: 28%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 212px;
+    /* width: 200px; */
     position: relative;
     margin: 5px 0px 0px 60px;
     transition: 2s;
@@ -8314,7 +8329,7 @@ span.detailprice {
     -moz-transition: 2s;
     right: calc(15% - 5px);
 }
-.tours-grid__item-image:hover {
+.tours-grid__item-car:hover {
  right:0;
 }
 .tour-availability-type{

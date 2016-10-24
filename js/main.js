@@ -61,6 +61,7 @@ $( "#accordion" ).accordion();
     }
   }
 
+/*
    $( ".tours-grid__item-header" ).mouseenter(function() {
     //event.preventDefault();
    $('.tours-grid__item-price-active').show().addClass('animated flipInX');
@@ -70,6 +71,9 @@ $( "#accordion" ).accordion();
     //event.preventDefault();
    $('.tours-grid__item-price-active').fadeOut("slow").removeClass('animated flipInX');
 });
+*/
+
+
 
   // Toggle Question
   function toggleQuestion() {
