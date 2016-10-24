@@ -8778,7 +8778,7 @@ display : block;
   padding: 0px;
 }
 .faqs-question {
-  background-color: #efead9;
+  /*background-color: #efead9;*/
   margin-bottom: 15px;
   padding: 10px 15px;
   position: relative;
