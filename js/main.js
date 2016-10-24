@@ -27,27 +27,6 @@ $(function() {
     slidesPerView: 'auto'
   });
 
-  var swiperTranfers = new Swiper('.swiper-transfers', {
-        pagination: '.swiper-pagination',
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
-        slidesPerView: 1,
-        paginationClickable: true,
-        spaceBetween: 30,
-        loop: true
-  });
-
-    var swiperBanners = new Swiper('.swiper-banners', {
-        pagination: '.swiper-pagination',
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
-        slidesPerView: 1,
-        paginationClickable: true,
-        spaceBetween: 30,
-        loop: true
-  });
-
-
   var newsTemplatesSwiper = new Swiper('.js-ta-news-templates-swiper', {
     slidesPerView: 2,
     slidesPerGroup: 2,
@@ -58,41 +37,18 @@ $(function() {
     prevButton: '.ta-news-templates-button--prev',
   });
 
+
+    $( "#ta-profile-edit-btn" ).click(function() {
+  $( "#ta-profile-edit-info" ).show();
+});
+
   // jQuery UI Tabs
   $('.jqueryui-tabs').tabs();
   $('.jqueryui-news-post-tabs').tabs({
     active: 1
   });
   
-   // Close
-$(document).on('click', function(event) {
- if ($(event.target).has('.close').length) {
-    $(".ta-button").hide();
-  }
-});
-
- $(document).on('ready', function() {
-      $(".regular").slick({
-        dots: true,
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 3
-      });
-      $(".center").slick({
-        dots: true,
-        infinite: true,
-        centerMode: true,
-        slidesToShow: 3,
-        slidesToScroll: 3
-      });
-      $(".variable").slick({
-        dots: true,
-        infinite: true,
-        variableWidth: true
-      });
-    });
-
-
+$( "#accordion" ).accordion();
 
   // Init FAQs Accordion
   function initFAQsAccordion() {
@@ -104,6 +60,16 @@ $(document).on('click', function(event) {
       });
     }
   }
+
+   $( ".tours-grid__item-header" ).mouseenter(function() {
+    //event.preventDefault();
+   $('.tours-grid__item-price-active').show().addClass('animated flipInX');
+});
+
+  $( ".tours-grid__item-header" ).mouseleave(function() {
+    //event.preventDefault();
+   $('.tours-grid__item-price-active').fadeOut("slow").removeClass('animated flipInX');
+});
 
   // Toggle Question
   function toggleQuestion() {
@@ -120,6 +86,8 @@ $(document).on('click', function(event) {
       $this.siblings('.question-close-button').show();
     })
   }
+   // multiselect box
+  //$('#multiselect').multiselect();
 
   // jQuery UI DatePicker
   $('.js-datepicker').datepicker({
