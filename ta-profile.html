@@ -92,17 +92,26 @@
     </nav>-------->
     <div class="ta-page-main">
         <div class="transfers-landing-imgback ta-dashboard-imgback">
-      <div class="ta-top-back">   
-      <div class="ta-top-section"><a href="./index.html" class="ta-logo-wrapper"><img src="./img/logo.png" alt="Amstar dmc homepage" class="site-logo"></a>
-        <div class="ta-client">
-          <div class="ta-client__portrait"><img class="profile" src="./img/david-gandy.jpg" alt=""></div>
-          <div class="ta-client__welcome">Welcome, 
-            <div class="ta-client__name">David Gandy</div>
+      <div class="ta-top-back">
+        <div class="ta-top-section">
+          <div class="flex-row">
+          <div class="flex-col">
+            <a href="./index.html" class="ta-logo-wrapper"><img src="./img/logo-white.png" alt="Amstar dmc homepage" class="site-logo"></a>
+             <h1 class="ta-heading-section">Travel Agent Hub</h1>
           </div>
-          <div class="ta-client__hotline">Travel Agent Hotline <a href="tel:8773294461" class="ta-client__hotline-number">1 (877) 329 4461</a></div>
+          <div class="flex-col">
+            <div class="ta-client">
+              <div class="ta-client__welcome">Welcome<br>
+                <div class="ta-client__name">David Gandy</div> 
+                <span class="ta-client-number">Client No. 22113</span>
+              </div>
+            <div class="ta-profile-pic" style="background-image:url(./img/ta/profile-picture.jpg)"></div>
+             <div class="ta-client__hotline">Travel Agent Hotline <a href="tel:8773294461" class="ta-client__hotline-number">1 (877) 329 4461</a></div>
+          </div>
+          </div>
         </div>
-        <h1 class="ta-heading"><span class="ta-client-number">Client No. 22113</span>Travel Agents Hub</h1>
-      </div>
+        </div>
+        <div class="ta-color-background"></div>  
       </div> 
 
 
@@ -119,12 +128,12 @@
             <li class="ta-nav__item swiper-slide"><a href="./ta-airport-maps.html" class="ta-nav-tile ta-nav-tile--cc"><span class="icon-folder-19"> </span>
                 <div class="ta-nav-tile__title">Collateral Corner</div></a>
             </li>
-            <li class="ta-nav__item swiper-slide"><a href="./ta-profile.html" class="ta-nav-tile ta-nav-tile--profile"><span class="icon-id-card-5"> </span>
+            <li class="ta-nav__item swiper-slide"><a href="./ta-profile.html" class="ta-nav-tile ta-nav-tile--profile-current"><span class="icon-id-card-5"> </span>
                 <div class="ta-nav-tile__title">Profile</div></a>
             </li>
-            <li class="ta-nav__item swiper-slide"><a href="./ta-bank.html" class="ta-nav-tile ta-nav-tile--cpr"><span class="icon-wallet"> </span>
+            <!--<li class="ta-nav__item swiper-slide"><a href="./ta-bank.html" class="ta-nav-tile ta-nav-tile--cpr"><span class="icon-wallet"> </span>
                 <div class="ta-nav-tile__title_small">Comission Payment Registration</div></a>
-            </li>
+            </li>-->
             <li class="ta-nav__item swiper-slide"><a href="ta-listagents.html" class="ta-nav-tile ta-nav-tile--ma"><span class="icon-user-6"> </span>
                 <div class="ta-nav-tile__title">Manage Agents</div></a></li>
             <li class="ta-nav__item swiper-slide"><a href="./ta-faqs.html" class="ta-nav-tile ta-nav-tile--faqs"><span class="icon-list2"> </span>
@@ -142,14 +151,14 @@
          <li class="ta-nav__item swiper-slide"><a href="./ta-settings.html" class="ta-nav-tile ta-nav-tile--"><span class="icon-list2"> </span>
                 <div class="ta-nav-tile__title">Faq's</div></a>
             </li>
-          </ul>-->
+          </ul>
           <div class="ta-title-block">
             <div class="ta-thumb-wrapper">
               <div class="ta-tile-icon ta-tile-icon--thumb ta-tile-icon--dashboard ta-tile-icon ta-nav-tile--profile"><span class="icon-id-card-5"></span></div>
             </div>
             <h2 class="ta-title">Profile</h2>
             <p class="ta-description">Review by months your sales stats</p>
-          </div>
+          </div>-->
         </div>
         <div class="ta-flex-row">
           <div class="ta-col-aside dashboard-content">
@@ -161,7 +170,21 @@
           </div>
           <div class="ta-col-main ta-col-main--dashboard">
           <h1>My Profile</h1>
-            <div class="">
+          <div class="">
+            
+              <div class="settings-form-flex">
+                <div class="ta-profile-container">
+                <div class="ta-profile-pic" style="background-image:url(./img/ta/profile-picture.jpg)"></div>
+                  <div class="ta-profile-name">Mr. David Gandy</div>
+                  <div class="ta-profile-content">
+                    <p>davidg@email.com</p>
+                    <button id="ta-profile-edit-btn" type="submit" class="btn btn-notice ">Update Info / Change Password</button>
+                  </div>
+                </div>
+              </div>
+            
+          </div>
+            <div id="ta-profile-edit-info" style="display: none;">
             <form action="#">
               <div class="settings-form-flex">
                 <div class="settings-form-group">
@@ -206,9 +229,8 @@
                   </div>
                 </div>
               </div>
-              <div class="ta-checkbox-agree"><input type="checkbox" name="terms" value=""> Please send me promotional information and newsletters</div>
               <div class="ta-form-field ta-form-field--controls">
-              <button type="submit" class="btn btn-notice ">Send Mail</button>
+              <button type="submit" class="btn btn-notice ">Update</button>
               </div>
             </form>
           </div>

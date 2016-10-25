@@ -7094,7 +7094,7 @@ filter: grayscale(20%);
 .tours-grid__item:hover,
 .tours-grid__item.selected {
   background-color: #fff;
-  box-shadow: 0 0 0 4px #fd9b00 inset;
+  /*box-shadow: 0 0 0 4px #fd9b00 inset;*/
 }
 .tours-grid__item-header {
   background-position: 50%;
@@ -7112,6 +7112,7 @@ filter: grayscale(20%);
     background-size: cover;
     height: 212px;
 }
+
 
 
 .rotate-transfer{
@@ -7348,6 +7349,9 @@ transform: scale3d(1.05, 1.05, 1.05);
   display: inline-block;
   vertical-align: top;
 }
+.tours-activities-grid .tours-grid-client:hover{
+  color: #fd9b00;
+}
 .tours-activities-grid .tours-grid__item-header{
   height: 285px;
 }
@@ -7376,6 +7380,9 @@ transform: scale3d(1.05, 1.05, 1.05);
   display: inline-block;
   margin:0 10px;
   text-align: center;
+}
+.tours-grid-destination:hover{
+  color: #fd9b00;
 }
 .tour-offer {
   width: 100px;

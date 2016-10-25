@@ -92,17 +92,26 @@
     </nav>-------->
     <div class="ta-page-main">
         <div class="transfers-landing-imgback ta-dashboard-imgback">
-      <div class="ta-top-back">   
-      <div class="ta-top-section"><a href="./index.html" class="ta-logo-wrapper"><img src="./img/logo.png" alt="Amstar dmc homepage" class="site-logo"></a>
-        <div class="ta-client">
-          <div class="ta-client__portrait"><img class="profile" src="./img/david-gandy.jpg" alt=""></div>
-          <div class="ta-client__welcome">Welcome, 
-            <div class="ta-client__name">David Gandy</div>
+      <div class="ta-top-back">
+        <div class="ta-top-section">
+          <div class="flex-row">
+          <div class="flex-col">
+            <a href="./index.html" class="ta-logo-wrapper"><img src="./img/logo-white.png" alt="Amstar dmc homepage" class="site-logo"></a>
+             <h1 class="ta-heading-section">Travel Agent Hub</h1>
           </div>
-          <div class="ta-client__hotline">Travel Agent Hotline <a href="tel:8773294461" class="ta-client__hotline-number">1 (877) 329 4461</a></div>
+          <div class="flex-col">
+            <div class="ta-client">
+              <div class="ta-client__welcome">Welcome<br>
+                <div class="ta-client__name">David Gandy</div> 
+                <span class="ta-client-number">Client No. 22113</span>
+              </div>
+            <div class="ta-profile-pic" style="background-image:url(./img/ta/profile-picture.jpg)"></div>
+             <div class="ta-client__hotline">Travel Agent Hotline <a href="tel:8773294461" class="ta-client__hotline-number">1 (877) 329 4461</a></div>
+          </div>
+          </div>
         </div>
-        <h1 class="ta-heading"><span class="ta-client-number">Client No. 22113</span>Travel Agents Hub</h1>
-      </div>
+        </div>
+        <div class="ta-color-background"></div>  
       </div> 
 
 
@@ -122,12 +131,12 @@
             <li class="ta-nav__item swiper-slide"><a href="./ta-profile.html" class="ta-nav-tile ta-nav-tile--profile"><span class="icon-id-card-5"> </span>
                 <div class="ta-nav-tile__title">Profile</div></a>
             </li>
-            <li class="ta-nav__item swiper-slide"><a href="./ta-bank.html" class="ta-nav-tile ta-nav-tile--cpr"><span class="icon-wallet"> </span>
+            <!--<li class="ta-nav__item swiper-slide"><a href="./ta-bank.html" class="ta-nav-tile ta-nav-tile--cpr"><span class="icon-wallet"> </span>
                 <div class="ta-nav-tile__title_small">Comission Payment Registration</div></a>
-            </li>
+            </li>-->
             <li class="ta-nav__item swiper-slide"><a href="ta-listagents.html" class="ta-nav-tile ta-nav-tile--ma"><span class="icon-user-6"> </span>
                 <div class="ta-nav-tile__title">Manage Agents</div></a></li>
-            <li class="ta-nav__item swiper-slide"><a href="#" class="ta-nav-tile ta-nav-tile--faqs"><span class="icon-list2"> </span>
+            <li class="ta-nav__item swiper-slide"><a href="#" class="ta-nav-tile ta-nav-tile--faqs-current"><span class="icon-list2"> </span>
                 <div class="ta-nav-tile__title">Faq's</div></a>
             </li>
            
@@ -142,17 +151,22 @@
          <li class="ta-nav__item swiper-slide"><a href="./ta-settings.html" class="ta-nav-tile ta-nav-tile--"><span class="icon-list2"> </span>
                 <div class="ta-nav-tile__title">Faq's</div></a>
             </li>
-          </ul>-->
+          </ul>
           <div class="ta-title-block">
             <div class="ta-thumb-wrapper">
               <div class="ta-tile-icon ta-tile-icon--thumb ta-tile-icon--dashboard ta-tile-icon ta-nav-tile--faqs"><span class="icon-list2"></span></div>
             </div>
             <h2 class="ta-title">Faq's</h2>
             <p class="ta-description">Review by months your sales stats</p>
-          </div>
+          </div>-->
         </div>
-        <div class="ta-flex-row">
-          
+        <!--<div class="ta-flex-row">
+          <div class="ta-col-aside dashboard-content">
+            <div class="ta-menu-aside">
+              <a href="ta-listagents.html"><div class="ta-menu-aside-item">FQA's 1</div></a>
+              <a href="#"><div class="ta-menu-aside-item ta-menu-aside-item-active">FQA's 2</div></a>
+            </div>
+          </div>
           <div class="ta-col-main ta-col-main--dashboard ta-faqs"> 
             
           <div id="accordion">
@@ -206,9 +220,216 @@
 
 
           </div>
+        </div>-->
+
+        <div class="faqs-container">
+          <div class="faqs flex-row jqueryui-tabs jqueryui-faqs-accordion">
+            <div class="flex-col-aside faqs-aside">
+              <ul class="faqs-tabs-nav">
+                <li class="ui-state-active"><a href="#faq-1"><span class="faqs-tabs-nav__content">Site and Safety</span></a></li>
+                <li><a href="#faq-2"><span class="faqs-tabs-nav__content">Service Title</span></a></li>
+                <li><a href="#faq-3"><span class="faqs-tabs-nav__content">Billing</span></a></li>
+                <li><a href="#faq-4"><span class="faqs-tabs-nav__content">Affiliate Program</span></a></li>
+                <li><a href="#faq-5"><span class="faqs-tabs-nav__content">Confirmation</span></a></li>
+                <li><a href="#faq-6"> <span class="faqs-tabs-nav__content">Schedule</span></a></li>
+              </ul>
+            </div>
+            <div class="flex-col-main faqs-tabs-content">
+              <div id="faq-1" class="faqs-panel">
+                
+                <div class="faqs-questions">
+                  <div class="faqs-question">
+                  <div class="question-header-btn">
+                    
+                  </div>
+                    <button type="button" class="question-close-button js-question-close-button"><i class="icon-multiply"></i></button>
+                    <h4 class="faqs-question-title js-faqs-question-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h4>
+                    <div class="faq-answer">
+                      <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci.</p>
+                    </div>
+                  </div>
+                  <div class="faqs-question">
+                    <button type="button" class="question-close-button js-question-close-button"><i class="icon-multiply"></i></button>
+                    <h4 class="faqs-question-title js-faqs-question-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h4>
+                    <div class="faq-answer">
+                      <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris..</p>
+                    </div>
+                  </div>
+                  <div class="faqs-question">
+                    <button type="button" class="question-close-button js-question-close-button"><i class="icon-multiply"></i></button>
+                    <h4 class="faqs-question-title js-faqs-question-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h4>
+                    <div class="faq-answer">
+                      <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="faq-2" class="faqs-panel">
+                <div class="faqs-questions">
+                  <div class="faqs-question">
+                    <button type="button" class="question-close-button js-question-close-button"><i class="icon-multiply"></i></button>
+                    <h4 class="faqs-question-title js-faqs-question-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies vel turpis sed blandit?</h4>
+                    <div class="faq-answer">
+                      <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+                      <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+                      <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+                    </div>
+                  </div>
+                  <div class="faqs-question">
+                    <button type="button" class="question-close-button js-question-close-button"><i class="icon-multiply"></i></button>
+                    <h4 class="faqs-question-title js-faqs-question-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h4>
+                    <div class="faq-answer">
+                      <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="faq-3" class="faqs-panel">
+                <div class="faqs-questions">
+                  <div class="faqs-question">
+                    <button type="button" class="question-close-button js-question-close-button"><i class="icon-multiply"></i></button>
+                    <h4 class="faqs-question-title js-faqs-question-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h4>
+                    <div class="faq-answer">
+                      <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+                      <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="faq-4" class="faqs-panel">
+                <div class="faqs-questions">
+                  <div class="faqs-question">
+                    <button type="button" class="question-close-button js-question-close-button"><i class="icon-multiply"></i></button>
+                    <h4 class="faqs-question-title js-faqs-question-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h4>
+                    <div class="faq-answer">
+                      <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="faq-5" class="faqs-panel">
+                <div class="faqs-questions">
+                  <div class="faqs-question">
+                    <button type="button" class="question-close-button js-question-close-button"><i class="icon-multiply"></i></button>
+                    <h4 class="faqs-question-title js-faqs-question-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h4>
+                    <div class="faq-answer">
+                      <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="faq-6" class="faqs-panel">
+            
+                <div class="faqs-questions">
+                  <div class="faqs-question">
+                    <button type="button" class="question-close-button js-question-close-button"><i class="icon-multiply"></i></button>
+                    <h4 class="faqs-question-title js-faqs-question-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h4>
+                    <div class="faq-answer">
+                      <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="faqs-filter">Filter by Destination</div>
+              <div id="faq-7" class="faqs-panel">
+                <h3 class="faqs-header">All</h3>
+                <div class="faqs-questions">
+                  <div class="faqs-question">
+                    <button type="button" class="question-close-button js-question-close-button"></button>
+                    <h4 class="faqs-question-title js-faqs-question-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h4>
+                    <div class="faq-answer">
+                      <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi.</p>
+                    </div>
+                  </div>
+                  <div class="faqs-question">
+                    <button type="button" class="question-close-button js-question-close-button"></button>
+                    <h4 class="faqs-question-title js-faqs-question-title">Adipiscing elit?</h4>
+                    <div class="faq-answer">
+                      <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. </p>
+                      <p>Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti.</p>
+                    </div>
+                  </div>
+                  <div class="faqs-question">
+                    <button type="button" class="question-close-button js-question-close-button"></button>
+                    <h4 class="faqs-question-title js-faqs-question-title">Adipiscing elit?</h4>
+                    <div class="faq-answer">
+                      <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. </p>
+                      <p>Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti.</p>
+                    </div>
+                  </div>
+                  <div class="faqs-question">
+                    <button type="button" class="question-close-button js-question-close-button"></button>
+                    <h4 class="faqs-question-title js-faqs-question-title">Adipiscing elit?</h4>
+                    <div class="faq-answer">
+                      <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. </p>
+                      <p>Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="faq-8" class="faqs-panel">
+                <h3 class="faqs-header">Mexico</h3>
+                <div class="faqs-questions">
+                  <div class="faqs-question">
+                    <button type="button" class="question-close-button js-question-close-button"></button>
+                    <h4 class="faqs-question-title js-faqs-question-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h4>
+                    <div class="faq-answer">
+                      <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="faq-9" class="faqs-panel">
+                <h3 class="faqs-header">Dominican</h3>
+                <div class="faqs-questions">
+                  <div class="faqs-question">
+                    <button type="button" class="question-close-button js-question-close-button"></button>
+                    <h4 class="faqs-question-title js-faqs-question-title">Adipiscing elit?</h4>
+                    <div class="faq-answer">
+                      <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. </p>
+                      <p>Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="faq-10" class="faqs-panel">
+                <h3 class="faqs-header">Jamaica</h3>
+                <div class="faqs-questions">
+                  <div class="faqs-question">
+                    <button type="button" class="question-close-button js-question-close-button"></button>
+                    <h4 class="faqs-question-title js-faqs-question-title">Consectetur adipiscing elit?</h4>
+                    <div class="faq-answer">
+                      <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. </p>
+                      <p>Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="faq-11" class="faqs-panel">
+                <h3 class="faqs-header">Puerto Rico</h3>
+                <div class="faqs-questions">
+                  <div class="faqs-question">
+                    <button type="button" class="question-close-button js-question-close-button"></button>
+                    <h4 class="faqs-question-title js-faqs-question-title">Lorem ipsum dolor sit amet?</h4>
+                    <div class="faq-answer">
+                      <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti.</p>
+                    </div>
+                    <div class="faq-answer">
+                      <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+
       </div>
+
+
     </div>
+
+
     <footer class="page-footer">
       <div class="page-footer__row page-footer__row--dark">
         <div class="page-footer__row-content page-footer__row-content--top">
