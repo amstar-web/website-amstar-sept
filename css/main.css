@@ -911,7 +911,7 @@ label {
 }
 .alg{
     width: 200px;
-    margin: 0px 0px -37px 6px;
+    margin: 0px 0px -24px 6px;
 }
 input[type="checkbox"]:focus + .styled-checkbox {
   outline: 2px solid rgba(7, 40, 76, 0.5);
@@ -2372,11 +2372,16 @@ li.ui-timepicker-selected .ui-timepicker-duration,
   }
 .home-icons-icon{
     font-size: 45px;
-    margin-bottom: 25px;
 }
 .home-icon-title{
     font-size: 25px;
 }
+.home-icon-hero{
+  width: 100px;
+  }
+  .home-icon-hero-alg{
+  width: 280px;
+  }
 .home-icon-content{
   margin-top: 20px;
 }
@@ -2459,7 +2464,7 @@ li.ui-timepicker-selected .ui-timepicker-duration,
 }
 .home-transfers-imgback{
   background: #ccc;
-    background-image: url(../img/sweetheart.jpg);
+    background-image: url(../img/sweetheart-transfer.jpg);
     background-attachment: fixed;
     background-color: #fff;
     background-position: center top;
@@ -5850,15 +5855,15 @@ filter: grayscale(20%);
 .banner-section h1:before {
   left: 0;
 }
-
+ */
 .line-title {
     content: '';
-    width: 100%;
+    width: 603px;
     border-bottom: 1px #fd9b00 solid;
-    display: inline-block;
-    vertical-align: middle;
-    }
-    */
+ max-width: 1090px;
+    margin: 0 auto 35px;
+    padding: 0 20px;
+}
 .banner-section  h1
 {
   color: #004b8d;
@@ -9228,12 +9233,21 @@ display : block;
     width: inherit;
     margin: 0 5px;
   }
+    .line-title {
+    content: '';
+    width: 350px;
+    border-bottom: 1px #fd9b00 solid;
+ max-width: 1090px;
+    margin: 0 auto 35px;
+    padding: 0 20px;
+}
   .yourtext{
     margin-top: 20px;
   }
   .filterbox{
     text-align: center;
   }
+
   .filtertransfers{
     -webkit-padding-start: 0px;
   }
@@ -9258,6 +9272,7 @@ display : block;
     .btn-red-arrow {
     margin-right: -62px !important;
   }
+
 }
 .add-item__title{
     border-bottom: 1px solid #dedede;

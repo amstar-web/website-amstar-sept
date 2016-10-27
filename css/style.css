@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'amstar';
-  src:  url('fonts/amstar.eot?lwmnbl');
-  src:  url('fonts/amstar.eot?lwmnbl#iefix') format('embedded-opentype'),
-    url('fonts/amstar.ttf?lwmnbl') format('truetype'),
-    url('fonts/amstar.woff?lwmnbl') format('woff'),
-    url('fonts/amstar.svg?lwmnbl#amstar') format('svg');
+  src:  url('fonts/amstar.eot?6rsltn');
+  src:  url('fonts/amstar.eot?6rsltn#iefix') format('embedded-opentype'),
+    url('fonts/amstar.ttf?6rsltn') format('truetype'),
+    url('fonts/amstar.woff?6rsltn') format('woff'),
+    url('fonts/amstar.svg?6rsltn#amstar') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,6 +24,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-info3:before {
+  content: "\eceb";
+}
 .icon-top:before {
   content: "\eaf1";
 }
