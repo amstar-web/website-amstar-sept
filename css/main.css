@@ -667,6 +667,12 @@ h1 {
   text-transform: uppercase;
   color: #004b8d;
 }
+.page-heading-left {
+  margin-top: 40px;
+  text-transform: uppercase;
+  color: #004b8d;
+  margin-left: 41px;
+}
 h2 {
   font-weight: normal;
   margin: 0;
@@ -1153,11 +1159,14 @@ button:focus {
   color: #fff;
 }
 .btn-notice {
-  background-color: #fd9b00;
-  /* border-radius: 5px; */
-  color: #ffffff;
-  padding: 10px 20px;
-  text-transform: uppercase;
+    background-color: #fd9b00;
+    /* border-radius: 5px; */
+    color: #ffffff;
+    padding: 10px 9px;
+    text-transform: uppercase;
+    flex: 1 1 auto;
+    display: inline-grid;
+    margin-bottom: 11px;
 }
 .btn-notice a{
   text-decoration: none;
@@ -2340,7 +2349,14 @@ li.ui-timepicker-selected .ui-timepicker-duration,
 .home-destination-content {
     color: #fff;
     height: 100%;
-    background: rgba(10,108,208,0.5);
+    background: rgba(0,0,0,0.2);
+    position: relative;
+    text-transform: uppercase;
+}
+.home-destination-content:hover  {
+    color: #fff;
+    height: 100%;
+    background: rgba(0, 76, 143, 0.8);
     position: relative;
     text-transform: uppercase;
 }
@@ -2459,7 +2475,7 @@ li.ui-timepicker-selected .ui-timepicker-duration,
   text-transform: uppercase;
 }
 .home-destination-title{
-  font-size: 2rem;
+  font-size: 20px;
   margin-bottom: 1rem;
 }
 .home-transfers-imgback{
@@ -2520,7 +2536,7 @@ li.ui-timepicker-selected .ui-timepicker-duration,
   .home-destination-name{
     margin-bottom: 10px;
     display: inline-block;
-    font-size: 20px;
+    font-size: 15px;
     line-height: 33px;
     text-align: left;
     margin: 0 30px;
@@ -2528,7 +2544,7 @@ li.ui-timepicker-selected .ui-timepicker-duration,
   .home-destination-name2 {
     margin-bottom: 10px;
     display: inline-block;
-    font-size: 20px;
+    font-size: 15px;
     line-height: 33px;
     text-align: left;
     margin: 0 30px 0px 68px;;
@@ -3167,6 +3183,18 @@ li.ui-timepicker-selected .ui-timepicker-duration,
   .logo-desktop img {
     width: 120px; 
   }
+  .search-airport-tranfers {
+    background-color: rgb(4, 71, 144) !important;
+    padding: 10px 25px 15px;
+    margin-bottom: 20px;
+}
+.ui-tabs-active .searchbox-tabs-nav__item-title {
+    background-color: rgba(253, 131, 0, 1)!important;
+}
+.searchbox-tabs-nav__item-title {
+  background-color: rgb(7, 40, 76) !important;
+
+}
   .user-action {
       display: none;
   }
@@ -3219,6 +3247,14 @@ li.ui-timepicker-selected .ui-timepicker-duration,
     margin-top: 49%;
 }
 
+.home-travelagent-imgback {
+
+    background-attachment: scroll !important;
+
+}
+.home-transfers-imgback {
+background-attachment: scroll !important;
+}
 .button-section-slider {
     position: absolute;
     top: 77%;
@@ -7529,7 +7565,15 @@ transform: scale3d(1.05, 1.05, 1.05);
   /* top: 81% !important; */
 }
 .media .btn-photo{
-   background-color: rgba(253, 155, 0, 0.87);
+    background-color: rgba(0, 0, 0, 0.36);
+    color: #ffffff;
+    float: right;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    padding: 11px 0px 0px 11px;
+    cursor: pointer;
+}
    color: #ffffff;
    float: right;
    width: 40px;
@@ -8850,6 +8894,7 @@ display : block;
   .tours-filter {
   display: none;
 }
+
 .btn-red-arrow {
     margin-right: -79px !important;
 }
@@ -8883,10 +8928,10 @@ display : block;
 .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
   display: none;
 }
-.search-airport-tranfers .form-small-select {
+  .search-airport-tranfers .form-small-select {
     margin-bottom: 10px;
     position: relative;
-    width: 30.3%;
+    width: 31.86%;
     display: inline-block;
     vertical-align: top;
     margin-right: 4px;
@@ -8983,6 +9028,7 @@ display : block;
     top: -63px;
     left: 0;
   }
+
   .faqs-panel:not(:first-child) {
     display: none;
   }
@@ -9161,7 +9207,6 @@ display : block;
     border-right: none;
     width: 100%;
   }
-
   .ta-form-right {
     padding: 20px;
     width: 100%;
@@ -9240,6 +9285,42 @@ display : block;
  max-width: 1090px;
     margin: 0 auto 35px;
     padding: 0 20px;
+}
+.page-heading-left {
+      text-align: center;
+      margin-left: 0px;
+}
+.customer-step--first::before, .customer-step--second::before, .customer-step--first::after, .customer-step--second::after {
+  display: none;
+}
+.customer-steps {
+    border: 1px solid #d3d3d3;
+    list-style: none;
+    margin: 40px 0 25px;
+    padding: 10px 68px 0;
+    /* text-align: center; */
+}
+.customer-step--first, .customer-step--second {
+ padding-right: 0px;
+}
+  .search-airport-tranfers .form-small-select {
+    margin-bottom: 10px;
+    position: relative;
+    width: 30.5%;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 4px;
+    margin-left: 2px;
+    /* color: #f4f4f4; */
+}
+  .center_btn {
+    text-align: center !important;
+}
+.cart-do-actions {
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    text-align: center;
 }
   .yourtext{
     margin-top: 20px;
