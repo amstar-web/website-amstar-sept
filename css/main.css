@@ -9286,9 +9286,40 @@ display : block;
     margin: 0 auto 35px;
     padding: 0 20px;
 }
+#security-number {
+    width:90% !important;
+}
+
 .page-heading-left {
       text-align: center;
       margin-left: 0px;
+}
+.form-group-inline .form-field .form-control, .form-group-inline .form-field .ui-selectmenu-button {
+    width: 100% !important;
+}
+.center-terms {
+    text-align: center;
+    margin-left: 8%;
+}
+.form-field {
+    margin: 0px 0px 14px 0px;
+    position: relative;
+    text-align: center;
+}
+.form-group-inline .form-field {
+    width: 100% !important;
+}
+.form-small {
+    max-width: 100% !important;
+}
+#valid-year {
+    width: 100% !important;
+}
+#valid-month {
+    width: 100% !important;
+}
+#area-code {
+    width: 100% !important;
 }
 .customer-step--first::before, .customer-step--second::before, .customer-step--first::after, .customer-step--second::after {
   display: none;
