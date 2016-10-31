@@ -369,7 +369,7 @@ th {
 body {
   background-color: #fff;
   color: #616060;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Cabin', sans-serif;
   font-size: 1rem;
   line-height: 1.25;
 }
@@ -489,7 +489,7 @@ h3 a {
     /* top: 50%; */
     left: 50%;
     transform: translate(-50%, -50%);
-    margin-top: 14%;
+    margin-top: 21%;
 }
 .button-section-slider {
     position: absolute;
@@ -2349,7 +2349,7 @@ li.ui-timepicker-selected .ui-timepicker-duration,
 .home-destination-content {
     color: #fff;
     height: 100%;
-    background: rgba(0,0,0,0.2);
+    background: rgba(0, 76, 143, 0.2);
     position: relative;
     text-transform: uppercase;
 }
@@ -2386,8 +2386,9 @@ li.ui-timepicker-selected .ui-timepicker-duration,
     text-align: center;
     width: 100%;
   }
-.home-icons-icon{
+.home-icons-icon {
     font-size: 45px;
+    margin-bottom: 37px;
 }
 .home-icon-title{
     font-size: 25px;
@@ -2467,20 +2468,14 @@ li.ui-timepicker-selected .ui-timepicker-duration,
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.home-destination-content {
-  color: #fff;
-  height: 100%;
-  background: rgba(10,108,208,0.5);
-  position: relative;
-  text-transform: uppercase;
-}
+
 .home-destination-title{
   font-size: 20px;
   margin-bottom: 1rem;
 }
 .home-transfers-imgback{
   background: #ccc;
-    background-image: url(../img/sweetheart-transfer.jpg);
+    background-image: url(../img/transfers-landing-03.jpg);
     background-attachment: fixed;
     background-color: #fff;
     background-position: center top;
@@ -2538,7 +2533,7 @@ li.ui-timepicker-selected .ui-timepicker-duration,
     display: inline-block;
     font-size: 15px;
     line-height: 33px;
-    text-align: left;
+    text-align: center;
     margin: 0 30px;
   }
   .home-destination-name2 {
@@ -2546,7 +2541,7 @@ li.ui-timepicker-selected .ui-timepicker-duration,
     display: inline-block;
     font-size: 15px;
     line-height: 33px;
-    text-align: left;
+    text-align: center;
     margin: 0 30px 0px 68px;;
 }
   .home-border {
@@ -3289,7 +3284,7 @@ background-attachment: scroll !important;
     margin-top: 29px;
   }
 .site-logo-wrapper {
-    padding: 27px 10px 10px 59px;
+    padding: 16px 10px 10px 59px;
 }
 }
 .top-contacts__item {
@@ -3354,6 +3349,13 @@ background-attachment: scroll !important;
   .top-contacts{
     margin-right: 40px;
   }
+  .button-section {
+    position: absolute;
+    /* top: 50%; */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 13%;
+}
 }
 @media (min-width: 768px) {
   .menu-trigger {
@@ -3569,7 +3571,7 @@ background-attachment: scroll !important;
   }
   .top-nav--first-level > li > .top-nav__item-title {
     border-top: 2px solid transparent;
-    padding: 3px 13px 11px;
+    padding: 0px 13px 11px;
     text-align: center;
     display: inline-table;
   }
@@ -3943,14 +3945,14 @@ background-attachment: scroll !important;
 #searchfield:focus{
    outline: 0;
 }
-#chatview{
-  width:290px;
-  height:484px;
-  position:absolute;
-  top:0;
-  left:0; 
-  display:none;
-  background:#fff;
+#chatview {
+    width: 290px;
+    height: 372px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    background: #fff;
 }
 #profile{
   height:153px;
@@ -5921,6 +5923,7 @@ filter: grayscale(20%);
     background-color: #ffffff;
     margin-top: 2px;
     padding: 10px 20px 0px;
+    margin-bottom: 82px;
 }
 
 .banner-swiper .swiper-slide__img {
@@ -5928,6 +5931,12 @@ filter: grayscale(20%);
     background-repeat: no-repeat;
     background-size: cover;
     height: 300px;
+}
+.banner-swiper .swiper-slide__transfers {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
 }
 .banner-section .swiper-pagination {
     border-radius: 12px;
@@ -6553,7 +6562,7 @@ filter: grayscale(20%);
   display: block;
   font-size: 14px;
   line-height: 20px;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -6572,8 +6581,8 @@ filter: grayscale(20%);
     color: #ffffff;
 }
 .searchbox-tabs {
-  background-color: rgba(0, 0, 0, 0.4);
-  padding: 10px 25px 15px;
+    background-color: rgba(70, 70, 70, 0.34);
+    padding: 10px 25px 15px;
 }
 .searchbox-tab:not(:first-child) {
   display: none;
@@ -9253,13 +9262,13 @@ display : block;
     width: 60.7%;
   }
     .caption{
-       top: 39%;
+       top: 44%;
 }
   .caption h1 {
     font-size: 40px;
 }
 .caption h2 {
-    font-size: 35px;
+    font-size: 23px;
 }
 
 .menu-icon-item {
